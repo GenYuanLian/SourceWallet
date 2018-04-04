@@ -1,0 +1,29 @@
+page-disclaimer {
+  @extend %onboarding;
+  text-align: center;
+  ion-header {
+    .toolbar-title,
+    ion-icon {
+      color: color($colors, primary);
+    }
+    .toolbar-background {
+      background-color: transparent;
+    }
+  }
+  .link {
+    font-size: 2vh;
+    cursor: pointer;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .checkbox-list {
+    ion-item {
+      background: none;
+      color: #fff;
+    }
+  }
+}

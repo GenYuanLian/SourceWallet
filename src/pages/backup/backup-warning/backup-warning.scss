@@ -1,0 +1,17 @@
+page-backup-warning {
+  text-align: center;
+  ion-header {
+    .toolbar-title, ion-icon {
+      color: color($colors, primary);
+    }
+    .toolbar-background {
+      background-color: transparent;
+    }
+  }
+  p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

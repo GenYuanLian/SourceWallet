@@ -1,0 +1,76 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{'Buy'|translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <div class="mercado-libre-title">
+        <img src="assets/img/mercado-libre/icon-ml.svg">
+        <span>Vale-Presente do Mercado Livre Brasil</span>
+      </div>
+      <div class="amount-label">
+        <div class="amount">{{amountUnitStr}}</div>
+      </div>
+    </ion-item>
+
+    <ion-item-group class="info">
+      <button ion-item (click)="showWallets()" class="wallets-list">
+        <div translate>From</div>
+        <div class="wallet">
+          <ion-icon item-start>
+            <img *ngIf="network == 'testnet'" [ngStyle]="{'background-color': wallet && wallet.color}" src="assets/img/icon-wallet-testnet.svg"
+              class="icon-wallet" />
+            <img *ngIf="network != 'testnet'" [ngStyle]="{'background-color': wallet && wallet.color}" src="assets/img/icon-wallet.svg"
+              class="icon-wallet" />
+          </ion-icon>
+          <div>{{wallet ? wallet.name : '...'}}</div>
+        </div>
+      </button>
+
+      <div *ngIf="totalAmountStr">
+        <ion-item-divider>
+          Details
+        </ion-item-divider>
+        <ion-item>
+          <span translate>Gift Card</span>
+          <ion-note item-end>
+            {{amount | currency:'$ ':2}}
+            <span *ngIf="amount"> {{currencyIsoCode}}</span>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <span translate>Network Cost</span>
+          <ion-note item-end>
+            <span>{{invoiceFee | currency:'$ ':2}}
+              <span *ngIf="invoiceFee"> {{currencyIsoCode}}</span>
+            </span>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <span translate>Miner Fee</span>
+          <ion-note item-end>
+            <span>{{networkFee | currency:'$ ':2}}
+              <span *ngIf="networkFee"> {{currencyIsoCode}}</span>
+            </span>
+          </ion-note>
+        </ion-item>
+        <ion-item>
+          <span translate>Total</span>
+          <ion-note item-end>
+            <span *ngIf="totalAmount">{{totalAmount | currency:'$ ':2}} {{currencyIsoCode}}</span>
+            <span *ngIf="totalAmountStr">({{totalAmountStr}})</span>
+          </ion-note>
+        </ion-item>
+      </div>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <button ion-button block class="button-footer" (click)="buyConfirm()" [disabled]="!(wallet && totalAmountStr)">Confirmar a compra</button>
+</ion-footer>

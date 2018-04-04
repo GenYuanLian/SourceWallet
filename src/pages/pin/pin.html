@@ -1,0 +1,54 @@
+<ion-header *ngIf="action === 'pinSetUp' || action === 'removeLock'">
+
+  <ion-navbar>
+    <ion-buttons start>
+      <button (click)="close()" ion-button>
+        {{'Close' | translate}}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <div class="messages">
+    <ion-item-divider *ngIf="!disableButtons">
+      <span *ngIf="!confirmingPin && !incorrect">Please enter your PIN</span>
+      <span *ngIf="confirmingPin && !incorrect">Confirm your PIN</span>
+      <span class="assertive" *ngIf="incorrect" translate>Incorrect PIN, try again.</span>
+    </ion-item-divider>
+    <ion-item-divider *ngIf="disableButtons">
+      <span class="assertive" *ngIf="expires" translate>Try again in {{expires}}</span>
+    </ion-item-divider>
+  </div>
+  <div class="block-code">
+    <div class="circle" [ngClass]="getFilledClass(1)"></div>
+    <div class="circle" [ngClass]="getFilledClass(2)"></div>
+    <div class="circle" [ngClass]="getFilledClass(3)"></div>
+    <div class="circle" [ngClass]="getFilledClass(4)"></div>
+  </div>
+  <div class="block-buttons">
+    <div class="row">
+      <div (click)="newEntry('1')">1</div>
+      <div (click)="newEntry('2')">2</div>
+      <div (click)="newEntry('3')">3</div>
+    </div>
+    <div class="row">
+      <div (click)="newEntry('4')">4</div>
+      <div (click)="newEntry('5')">5</div>
+      <div (click)="newEntry('6')">6</div>
+    </div>
+    <div class="row">
+      <div (click)="newEntry('7')">7</div>
+      <div (click)="newEntry('8')">8</div>
+      <div (click)="newEntry('9')">9</div>
+    </div>
+    <div class="row">
+      <div></div>
+      <div (click)="newEntry('0')">0</div>
+      <div (click)="delete()">
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </div>
+    </div>
+  </div>
+</ion-content>

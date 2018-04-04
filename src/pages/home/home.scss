@@ -1,0 +1,40 @@
+page-home {
+  .home-logo {
+    height: 24px;
+    position: relative;
+    top: 3px;
+  }
+  .toolbar-title-ios {
+    text-align: center;
+  }
+  .check{
+    text-align: center;
+    .title {
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    .subtitle{
+      padding: 10px;
+    }
+    .check-icon {
+      cursor: pointer;
+    }
+  }
+  .title {
+    >img {
+      vertical-align: sub;
+      margin-right: 5px;
+    }
+  }
+  .error {
+    color: color($colors, danger);
+  }
+  .no-wallets {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}

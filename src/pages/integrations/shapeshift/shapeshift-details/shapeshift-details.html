@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Details
+    </ion-title>
+    <ion-buttons start>
+      <button (click)="close()" ion-button>
+        {{'Close' | translate}}
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content no-bounce>
+  <div class="header-modal">
+    <div class="title-modal">
+      <img src="assets/img/shapeshift/icon-shapeshift.svg" alt="ShapeShift" width="50"> {{ssData.title}}
+    </div>
+
+    <div class="subtitle-modal">
+      {{ssData.amount}}
+    </div>
+
+    <div class="status-modal">
+      <span class="assertive" *ngIf="ssData.status == 'failed'">Failed</span>
+      <span class="balanced" *ngIf="ssData.status == 'complete'">Completed</span>
+      <span class="dark" *ngIf="ssData.status == 'received'">Pending</span>
+      <span class="text-gray" *ngIf="ssData.status == 'no_deposits'">Pending</span>
+    </div>
+  </div>
+
+  <ion-list>
+    <ion-item-divider></ion-item-divider>
+
+    <ion-item>
+      Rate
+      <ion-note item-end>
+        <span *ngIf="!ssData.rate">...</span>
+        <span *ngIf="ssData.rate">
+          {{ ssData.rate }}
+        </span>
+      </ion-note>
+    </ion-item>
+
+    <ion-item>
+      Created
+      <ion-note item-end>
+        <span *ngIf="!ssData.date">...</span>
+        <span *ngIf="ssData.date">
+          {{ ssData.date | amDateFormat:'MMM D, YYYY'}}
+        </span>
+      </ion-note>
+    </ion-item>
+
+    <ion-item-divider>Deposit</ion-item-divider>
+
+    <ion-item>
+      Address
+      <ion-note item-end text-wrap>
+        <span *ngIf="!ssData.address">...</span>
+        <span *ngIf="ssData.address" copy-to-clipboard="{{ssData.address}}">
+          {{ ssData.address }}
+        </span>
+      </ion-note>
+    </ion-item>
+
+    <ion-item *ngIf="ssData.incomingCoin">
+      Amount
+      <ion-note item-end>
+        {{ssData.incomingCoin}} {{ssData.incomingType}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item-divider>Withdraw</ion-item-divider>
+
+    <ion-item>
+      Address
+      <ion-note item-end text-wrap>
+        <span *ngIf="!ssData.withdrawal">...</span>
+        <span *ngIf="ssData.withdrawal" copy-to-clipboard="{{ssData.withdrawal}}">
+          {{ ssData.withdrawal }}
+        </span>
+      </ion-note>
+    </ion-item>
+
+    <ion-item *ngIf="ssData.outgoingCoin">
+      Amount
+      <ion-note item-end>
+        {{ssData.outgoingCoin}} {{ssData.outgoingType}}
+      </ion-note>
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+    <button ion-item detail-none *ngIf="ssData.transaction" (click)="openTransaction(ssData.transaction)">
+      See transaction
+    </button>
+    <ion-item-divider></ion-item-divider>
+    <button class="assertive" ion-item detail-none (click)="remove()">
+      Remove
+    </button>
+
+  </ion-list>
+</ion-content>

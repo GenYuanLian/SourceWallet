@@ -1,0 +1,21 @@
+page-send {
+  .show-more {
+    display: flex;
+    text-align: center;
+  }
+  .title {
+    img {
+      vertical-align: sub;
+      margin-right: 5px;
+    }
+  }
+  .no-wallet-message {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      padding: 30px;
+  }
+}

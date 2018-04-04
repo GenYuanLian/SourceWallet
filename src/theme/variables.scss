@@ -1,0 +1,135 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: '../assets/fonts';
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+@import 'ionic.globals';
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+// Override - Homogenized ionic component styles
+@import 'overrides';
+
+$colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  warning: #eba133,
+  danger: #bb331a,
+  success: #7bc94d,
+  light: #f4f4f4,
+  blank: #fafafa,
+  dark: #424242,
+  grey: #999
+);
+
+// Refresh color
+$refresher-icon-color: color($colors, primary);
+$refresher-icon-font-size: 12.5px;
+$refresher-height: 60px;
+
+// Toolbar
+$toolbar-text-color: color($colors, light);
+
+// Main color
+$text-color: color($colors, dark);
+
+// Border light
+$list-border-color: color($colors, light);
+
+// Onboarding colors
+$onboarding-gradient-top-color: $toolbar-background;
+$onboarding-gradient-bottom-color: $color-secondary;
+$onboarding-background-image: linear-gradient(
+  to bottom,
+  $onboarding-gradient-top-color 0%,
+  $onboarding-gradient-bottom-color 100%
+);
+$onboarding-color: #fff;
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$tabs-ios-background: color($colors, blank);
+$tabs-ios-border-color: rgba(0, 0, 0, .1);
+
+$item-ios-body-text-font-size: 1.4rem;
+$item-ios-divider-background: color($colors, blank);
+$item-ios-padding-top: 16px;
+$item-ios-padding-bottom: 16px;
+
+$list-ios-border-color: color($colors, light);
+$list-ios-header-font-size: 1.5rem;
+$list-ios-margin-bottom: 0;
+
+$searchbar-ios-background-color: color($colors, blank);
+$searchbar-ios-padding-vertical: 16px;
+$searchbar-ios-padding-horizontal: 8px;
+
+$note-ios-color: color($colors, grey);
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+$item-md-font-size: 1.4rem;
+$item-md-divider-background: color($colors, blank);
+$item-md-padding-top: 16px;
+$item-md-padding-bottom: 16px;
+
+$searchbar-md-padding-start: 8px;
+$searchbar-md-padding-end: 8px;
+$searchbar-md-padding-top: 16px;
+
+$list-md-border-color: color($colors, light);
+$list-md-header-margin-bottom: 0;
+$list-md-margin-bottom: 0;
+
+$note-md-color: color($colors, grey);
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import 'ionic.theme.default';
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import 'ionic.ionicons';
+
+// Fonts
+// --------------------------------------------------
+
+@import 'roboto';
+@import 'noto-sans';
+
+/* Ionic Overrides and Workarounds */
+// Please include a description of the problem solved by the workaround.
+
+// Hide scrollbars on platforms which don't match iOS, Android, or Windows
+// (So scroll bars are not visible in Chrome, NW.js, or Electron.)
+.platform-core .scroll-content {
+  overflow-y: auto;
+}

@@ -1,0 +1,11 @@
+page-import-wallet {
+  .assertive {
+    color: color($colors, danger);
+    ion-label {
+      white-space: inherit;
+    }
+  }
+  .scanner-icon {
+    z-index: 99;
+  }
+}

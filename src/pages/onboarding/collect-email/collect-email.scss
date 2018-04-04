@@ -1,0 +1,27 @@
+page-collect-email {
+  @extend %onboarding;
+  ion-header {
+    .toolbar-title,
+    ion-icon {
+      color: color($colors, primary);
+    }
+    .toolbar-background {
+      background-color: transparent;
+    }
+  }
+  text-align: center;
+  p {
+    line-height: 1.6;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .email-form {
+    p, ion-item {
+      color: #fff;
+    }
+    ion-item {
+      background: none;
+    }
+  }
+}

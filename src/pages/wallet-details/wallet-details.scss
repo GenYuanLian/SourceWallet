@@ -1,0 +1,133 @@
+page-wallet-details {
+  .balance-card {
+    background: color($colors, primary);
+  }
+  .balance-header {
+    position: relative;
+    color: color($colors, light);
+    height: 13rem;
+    text-align: center;
+  }
+  .balance-str {
+    cursor: pointer;
+    padding-top: 5rem;
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .balance-alt-str {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .balance-hidden {
+    cursor: pointer;
+    padding-top: 5rem;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .balance-error {
+    padding: 15% 1rem 0 1rem;
+  }
+  .balance-spendable {
+    margin-top: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    ion-icon {
+      vertical-align: text-bottom;
+      margin-right: 5px;
+    }
+  }
+  .balance-scanning {
+    font-size: 20px;
+    padding-top: 6rem;
+  }
+  .tx-history {
+    img {
+      width: 35px;
+    }
+    .action {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .amount {
+      color: color($colors, dark);
+      .received {
+        color: color($colors, primary);
+      }
+    }
+    .date {
+      font-size: 12.5px;
+    }
+  }
+
+  .middle-message {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .wallet-info {
+    font-weight: 400;
+    color: color($colors, light);
+    height: 30px;
+    padding: 0 5px;
+    img {
+      float: left;
+      margin-right: 4px;
+    }
+    .testnet {
+      height: 2rem;
+      width: 2rem;
+      margin-top: 5px;
+    }
+    .testnet-text {
+      color: color($colors, light);
+      height: 3rem;
+      width: 4rem;
+    }
+    .read-only {
+      height: 3rem;
+      width: 2rem;
+    }
+    .read-only-text {
+      height: 3rem;
+      width: 5rem;
+    }
+    .auditable-text {
+      height: 3rem;
+      width: 4rem;
+    }
+    .custom-bws {
+      height: 3rem;
+      width: 3rem;
+    }
+    .wallet-type {
+      display: block;
+      float: left;
+      margin: 0 5px;
+      padding-top: 9px;
+      font-size: 11px;
+    }
+    ion-spinner {
+      float: right;
+      width: 20px;
+      height: 20px;
+      margin: 5px 5px 0 0;
+      * {
+        stroke: color($colors, light);
+      }
+    }
+  }
+
+  .total-locked-amount {
+    color: color($colors, dark);
+  }
+  .total-alt-locked-amount, .double-spend {
+    text-align: end;
+    font-size: 12.5px;
+  }
+}
