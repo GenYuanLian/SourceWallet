@@ -27,6 +27,7 @@
     "clean": "rm -rf platforms && rm -rf plugins && rm -f config.xml",
     "prepare:copay": "npm run clean && npm run apply:copay && cordova prepare && npm run fix:fcm",
     "prepare:bitpay": "npm run clean && npm run apply:bitpay && cordova prepare && npm run fix:fcm",
+    "prepare:sw": "npm run clean && npm run apply:SourceWallet && cordova prepare && npm run fix:fcm",
     "clean-all": "git clean -dfx",
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
@@ -64,6 +65,7 @@
     "sign:android": "rm -f platforms/android/build/outputs/apk/release/android-release-signed-aligned.apk; jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore copay.keystore -signedjar platforms/android/build/outputs/apk/release/android-release-signed.apk platforms/android/build/outputs/apk/release/android-release-unsigned.apk copay && $ANDROID_HOME/build-tools/26.0.2/zipalign -v 4 platforms/android/build/outputs/apk/release/android-release-signed.apk platforms/android/build/outputs/apk/release/android-release-signed-aligned.apk",
     "apply:copay": "npm i fs-extra shelljs && cd app-template && node apply.js copay && npm i",
     "apply:bitpay": "npm i fs-extra shelljs && cd app-template && node apply.js bitpay && npm i",
+    "apply:SourceWallet": "npm i fs-extra shelljs && cd app-template && node apply.js SourceWallet && npm i",
     "fix:fcm": "echo platforms/ios/Copay/Resources platforms/ios/Copay/Resources/Resources platforms/ios/Bitpay/Resources platforms/ios/Bitpay/Resources/Resources | xargs -n 1 cp GoogleService-Info.plist 2>/dev/null; mkdir -p platforms/android/app/src/debug platforms/android/app/src/release; echo platforms/android/app/src/debug platforms/android/app/src/release platforms/android/app | xargs -n 1 cp google-services.json"
   },
   "dependencies": {

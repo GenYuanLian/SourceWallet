@@ -20,11 +20,12 @@
     <!--</ion-item>-->
 
 
-
+<!--
     <ion-item *ngIf="isCordova && !isWindowsPhoneApp" (click)="openFeedbackCompletePage()">
       <ion-icon name="ios-heart-outline" item-start></ion-icon>
       Share {{ appName }}
     </ion-item>
+-->
 
     <ion-item-divider>{{'Preferences' | translate}}</ion-item-divider>
 
@@ -60,12 +61,14 @@
       <!--</ion-note>-->
     <!--</button>-->
 
+    <!--
     <button ion-item (click)="openFeePolicyPage()">
       <ion-icon name="ios-git-network-outline" item-start></ion-icon>
       <ion-label>
         {{'Srcchain network fee policy' | translate}}
       </ion-label>
     </button>
+    -->
 
     <button ion-item (click)="openLockPage()">
       <ion-icon *ngIf="lockMethod != 'Disabled'" name="ios-lock-outline" item-start></ion-icon>
@@ -151,7 +154,7 @@
       <ion-icon name="ios-cog-outline" item-start></ion-icon>
       {{'Advanced' | translate}}
     </button>
-
+<!--
     <button ion-item (click)="openAboutPage()">
       <ion-icon name="ios-apps-outline" item-start></ion-icon>
       {{'About' | translate}} {{appName}}
@@ -161,6 +164,7 @@
       <ion-icon name="ios-mail-outline" item-start></ion-icon>
       Send feedback
     </ion-item>
+-->
     <ion-item-divider></ion-item-divider>
   </ion-list>
 </ion-content>

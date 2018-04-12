@@ -10,9 +10,13 @@ import * as _ from "lodash";
 export class LanguageProvider {
   private languages: Array<any> = [
     {
+      name: '中文（简体）',
+      isoCode: 'zh',
+      useIdeograms: true,
+    }, {
       name: 'English',
       isoCode: 'en'
-    }, {
+    } /*{
       name: 'Español',
       isoCode: 'es'
     }, {
@@ -41,7 +45,7 @@ export class LanguageProvider {
     }, {
       name: 'Português',
       isoCode: 'pt',
-    }
+    }*/
   ];
   private current: string;
 

@@ -60,10 +60,10 @@ msgid "Add description"
 msgstr "添加描述"
 
 msgid "Add funds"
-msgstr "添加资金"
+msgstr "添加BSTK"
 
 msgid "Add funds to get started"
-msgstr ""
+msgstr "注入BSTK以开始"
 
 msgid "Address"
 msgstr "地址"
@@ -84,16 +84,16 @@ msgid "Addresses with balance"
 msgstr "有余额的地址"
 
 msgid "Advanced"
-msgstr "進階"
+msgstr "进阶"
 
 msgid "All addresses"
 msgstr "所有地址"
 
 msgid "All of your bitcoin wallet balance may not be available for immediate spending."
-msgstr "所有您的比特币的钱包余额可能无法用于直接支出。"
+msgstr "所有您的钱包余额可能无法用于直接支出。"
 
 msgid "All signing devices must be added to this multisig wallet before bitcoin addresses can be created."
-msgstr "比特币地址可以创建之前，签名的所有设备都必须都添加到这个对数钱包。"
+msgstr "签名的所有设备都必须都添加到这个对数钱包。"
 
 msgid "Allow camera access"
 msgstr "允许访问相机"
@@ -120,13 +120,13 @@ msgid "An update to this app is available. For your security, please update to t
 msgstr "本程序有一个可用的更新。为了您的安全，请更新到最新版本。"
 
 msgid "Anyone with your backup phrase can access or spend your bitcoin."
-msgstr "任何人只要持有你的备份短语，就可以访问或者花掉你的比特币。"
+msgstr "任何人只要持有你的备份短语，就可以访问或者花掉你的BSTK。"
 
 msgid "Apply changes"
 msgstr "应用更改"
 
 msgid "Approximate Bitcoin network fee to transfer wallet's balance (with normal priority)"
-msgstr "转移钱包余额大约需要的比特币网络费用（正常优先级）"
+msgstr "网络费用（正常优先级）"
 
 msgid "Are you being watched?"
 msgstr "你正在被监视吗？"
@@ -164,6 +164,9 @@ msgstr "备份"
 msgid "Backup Needed"
 msgstr "需要备份"
 
+msgid "Backup needed"
+msgstr "需要备份"
+
 msgid "Backup all your wallets before using this function"
 msgstr "在使用此功能之前，请备份你的钱包。"
 
@@ -186,7 +189,7 @@ msgid "Be sure to store your recovery phrase in a secure place. If this app is d
 msgstr "请务必将您的恢复短语存储在一个安全的地方。如果这个程序被删除，不能没有它恢复你的钱。"
 
 msgid "Bitcoin (BTC) miner fees are high due to record demand for limited space on the Bitcoin network. BitPay does not receive and does not control bitcoin miner fees."
-msgstr ""
+msgstr "我们不控制网络费用"
 
 msgid "Bitcoin Address"
 msgstr "比特币地址"
@@ -195,10 +198,10 @@ msgid "Bitcoin Cash Wallets"
 msgstr "比特币现金钱包"
 
 msgid "Bitcoin Network Fee Policy"
-msgstr "比特币网络手续费策略"
+msgstr "网络手续费策略"
 
 msgid "Bitcoin Wallets"
-msgstr "比特币钱包"
+msgstr "钱包"
 
 msgid "Bitcoin cash Payment"
 msgstr "比特币现金支付"
@@ -222,16 +225,16 @@ msgid "Bitcoin network fee policy"
 msgstr ""
 
 msgid "Bitcoin transactions include a fee collected by miners on the network."
-msgstr "比特币交易包括在网络上被矿工所收取的费用。"
+msgstr "交易包括在网络上被矿工所收取的费用。"
 
 msgid "Broadcast Payment"
 msgstr "广播支付"
 
 msgid "Broadcasted"
-msgstr "广播商"
+msgstr "已广播"
 
 msgid "Broadcasting transaction..."
-msgstr ""
+msgstr "广播交易..."
 
 msgid "Buy Gift Card"
 msgstr ""
@@ -243,7 +246,7 @@ msgid "Buying Gift Card..."
 msgstr ""
 
 msgid "Calculating fee..."
-msgstr ""
+msgstr "计算费用..."
 
 msgid "Cancel"
 msgstr "取消"
@@ -264,13 +267,13 @@ msgid "Certified by"
 msgstr "通过认证："
 
 msgid "Check the transaction on your wallet details"
-msgstr ""
+msgstr "检查交易明细"
 
 msgid "Checking..."
-msgstr ""
+msgstr "检查中..."
 
 msgid "Choose a backup file from your computer"
-msgstr ""
+msgstr "从电脑中选择一个备份文件"
 
 msgid "Clear"
 msgstr "清除"
@@ -282,13 +285,13 @@ msgid "Click to accept"
 msgstr "点击这里接受"
 
 msgid "Click to confirm"
-msgstr ""
+msgstr "点击确认"
 
 msgid "Click to open Terms"
-msgstr ""
+msgstr "点击打开术语"
 
 msgid "Click to open the recovery tool"
-msgstr ""
+msgstr "点击打开恢复工具"
 
 msgid "Click to pay"
 msgstr "点击这里支付"
@@ -309,19 +312,19 @@ msgid "Completed"
 msgstr "完成"
 
 msgid "Configuration (m-n)"
-msgstr ""
+msgstr "配置(m-n)"
 
 msgid "Confirm"
 msgstr "确定"
 
 msgid "Confirm &amp; Finish"
-msgstr ""
+msgstr "确认完成"
 
 msgid "Confirm your PIN"
-msgstr ""
+msgstr "确认你的PIN"
 
 msgid "Confirm your new encrypt password"
-msgstr ""
+msgstr "确认你的新密码"
 
 msgid "Confirmations"
 msgstr "确认"
@@ -420,19 +423,19 @@ msgid "Could not delete payment proposal"
 msgstr "无法删除支付提议"
 
 msgid "Could not fetch the invoice"
-msgstr ""
+msgstr "无法获取收据"
 
 msgid "Could not get dynamic fee"
-msgstr "不能动态费用"
+msgstr "无法获取动态费用"
 
 msgid "Could not get dynamic fee for level:"
-msgstr ""
+msgstr "无法获取动态费用"
 
 msgid "Could not get fee levels"
 msgstr "无法获取费率"
 
 msgid "Could not get the Addressbook"
-msgstr ""
+msgstr "无法读取地址簿"
 
 msgid "Could not get the invoice"
 msgstr "不能拿到发票"
@@ -444,7 +447,7 @@ msgid "Could not import"
 msgstr "无法导入"
 
 msgid "Could not import. Check input file."
-msgstr ""
+msgstr "无法导入，请检查输入文件"
 
 msgid "Could not join wallet"
 msgstr "无法加入钱包"
@@ -465,13 +468,10 @@ msgid "Could not update wallet"
 msgstr "无法更新钱包"
 
 msgid "Create a new wallet"
-msgstr ""
+msgstr "创建BSTK钱包"
 
 msgid "Create bitcoin wallet"
-msgstr "创建比特币的钱包"
-
-msgid "Create personal wallet"
-msgstr ""
+msgstr "创建BSTK钱包"
 
 msgid "Create shared wallet"
 msgstr "创建共享的钱包"
@@ -495,7 +495,7 @@ msgid "Creating Wallet..."
 msgstr "正在创建钱包..."
 
 msgid "Creating transaction..."
-msgstr ""
+msgstr "创建交易..."
 
 msgid "Current fee rate for this policy"
 msgstr "此策略的当前费用率"
@@ -546,31 +546,31 @@ msgid "Details"
 msgstr "详情"
 
 msgid "Disabled"
-msgstr ""
+msgstr "已禁用"
 
 msgid "Do it later"
 msgstr "以后再做"
 
 msgid "Do not include private key"
-msgstr ""
+msgstr "不包含私钥"
 
 msgid "Don't see your language on Crowdin? Contact the Owner on Crowdin! We'd love to support your language."
 msgstr "在 Crowdin 找不到你的语言？请联系 Crowdin 的所有者！我们很乐意支持你的语言。"
 
 msgid "Done"
-msgstr ""
+msgstr "完成"
 
 msgid "Download"
 msgstr "下载"
 
 msgid "Duplicate"
-msgstr ""
+msgstr "复制"
 
 msgid "Duplicating wallet..."
 msgstr "正在复制钱包……"
 
 msgid "Each bitcoin wallet can generate billions of addresses from your 12-word backup. A new address is automatically generated and shown each time you receive a payment."
-msgstr ""
+msgstr "每个钱包可以从你的12字短语创建数十亿地址，每次接收一次转账都会创建新的地址。"
 
 msgid "Economy"
 msgstr "经济"
@@ -597,34 +597,34 @@ msgid "Enable the camera to get started."
 msgstr "使该摄像机开始。"
 
 msgid "Encrypt password needed"
-msgstr ""
+msgstr "需要加密密码"
 
 msgid "Encryption can protect your funds if this device is stolen or compromised by malicious software."
-msgstr ""
+msgstr "加密可以保护您的数字资产。"
 
 msgid "Enter a new encrypt password"
-msgstr ""
+msgstr "输入新的加密密码"
 
 msgid "Enter a password to encrypt your wallet"
-msgstr ""
+msgstr "输入密码以加密钱包"
 
 msgid "Enter custom fee in sat/byte"
 msgstr ""
 
 msgid "Enter encrypt password"
-msgstr ""
+msgstr "输入加密密码"
 
 msgid "Enter your encrypt password again to confirm"
-msgstr ""
+msgstr "再次输入加密密码"
 
 msgid "Enter your password"
 msgstr "请输入你的密码"
 
 msgid "Entry already exist"
-msgstr ""
+msgstr "入口已存在"
 
 msgid "Entry does not exist"
-msgstr ""
+msgstr "入口不存在"
 
 msgid "Error"
 msgstr "错误！"
@@ -768,7 +768,7 @@ msgid "Get local cash anywhere you go, from any Visa&reg; compatible ATM. ATM ba
 msgstr ""
 
 msgid "Get news and updates from BitPay"
-msgstr "从 BitPay 获取新闻和更新"
+msgstr "从 SourceChain 获取新闻和更新"
 
 msgid "Get started"
 msgstr "马上体验"
@@ -969,10 +969,10 @@ msgid "Loading transaction info..."
 msgstr "正在加载交易信息..."
 
 msgid "Loading..."
-msgstr ""
+msgstr "载入中..."
 
 msgid "Lock"
-msgstr ""
+msgstr "设备锁"
 
 msgid "Locked"
 msgstr "锁定"
@@ -1065,13 +1065,13 @@ msgid "New wallet"
 msgstr "新建钱包"
 
 msgid "No"
-msgstr ""
+msgstr "否"
 
 msgid "No access key defined"
 msgstr "授权密钥未定义"
 
 msgid "No backup, no bitcoin."
-msgstr "没有备份，没有比特币。"
+msgstr "没有备份，没有BSTK。"
 
 msgid "No contacts yet"
 msgstr "然而没有联系人"
@@ -1179,7 +1179,7 @@ msgid "Oh no!"
 msgstr ""
 
 msgid "Ok"
-msgstr "还行"
+msgstr "确认"
 
 msgid "On"
 msgstr ""
@@ -1641,7 +1641,7 @@ msgid "Signing transaction..."
 msgstr ""
 
 msgid "Since only you control your money, you’ll need to save your backup phrase in case this app is deleted."
-msgstr "因为只有你控制你的钱，你会需要删除此应用程序的情况下保存您备份的短语。"
+msgstr "因为只有你控制你的数字资产，你会需要删除此应用程序的情况下保存您备份的短语。"
 
 msgid "Single address"
 msgstr ""
@@ -1791,31 +1791,31 @@ msgid "There is an error in the form"
 msgstr "表格中有错误"
 
 msgid "There's obviously something we're doing wrong. How could we improve your experience?"
-msgstr ""
+msgstr "出错了"
 
 msgid "This app is fantastic!"
 msgstr "这个应用程序太棒了 ！"
 
 msgid "This app stores your bitcoin with cutting-edge security."
-msgstr "此应用程序商店你比特币与尖端的安全。"
+msgstr "此应用采用顶尖安全技术保护您的数字资产"
 
 msgid "This bitcoin payment request has expired."
-msgstr "这比特币付款请求已过期。"
+msgstr "这比付款请求已过期。"
 
 msgid "This password is only for this device, and it cannot be recovered. To avoid losing funds, write your password down."
-msgstr ""
+msgstr "此密码仅对本设备有效，且无法恢复，为了避免损失，请牢记您的密码。"
 
 msgid "This recovery phrase was created with a password. To recover this wallet both the recovery phrase and password are needed."
 msgstr "此恢复短语是用密码创建。为了恢复此钱包，需要恢复短语和密码。"
 
 msgid "This transaction amount is too small compared to current Bitcoin network fees. Spending these funds will need a Bitcoin network fee cost comparable to the funds itself."
-msgstr "相对于当前比特币网络费，这笔交易金额太小。手续费相当于这笔交易金额本身。"
+msgstr "相对于当前网络费，这笔交易金额太小。手续费相当于这笔交易金额本身。"
 
 msgid "This transaction could take a long time to confirm or could be dropped due to the low fees set by the sender"
-msgstr "这笔交易可能需要很长的时间来确认或可能受到由发件人设置的低费用下降"
+msgstr "由于发件人设置了较低的交易费用，这笔交易可能需要很长的时间来确认或可能被丢弃。"
 
 msgid "This wallet is not registered at the given Bitcore Wallet Service (BWS). You can recreate it from the local information."
-msgstr "此钱包不在给定的 Bitcore Wallet Service (BWS) 注册。你可以从本地信息重新创建它。"
+msgstr "此钱包不在给定的 BSTK服务 注册。你可以从本地信息重新创建它。"
 
 msgid "Timeline"
 msgstr "时间轴"
@@ -2088,7 +2088,7 @@ msgid "When this wallet was created, it was called &ldquo;{{walletName}}&rdquo;.
 msgstr "这个钱包在创建时，它被称为\"{{walletName}}\"。您可以更改显示在这下面的设备的名称。"
 
 msgid "Where would you like to receive email notifications about payments?"
-msgstr "在那里你想要接收电子邮件通知有关付款？"
+msgstr "填写电子邮件以接收交易通知："
 
 msgid "Why?"
 msgstr "为什么？"
@@ -2103,16 +2103,16 @@ msgid "Would you be willing to rate {{appName}} in the app store?"
 msgstr "你会愿意率 {{appName}} app store 中的吗？"
 
 msgid "Would you like to protect this wallet with a password?"
-msgstr ""
+msgstr "您愿意使用密码来保护您的钱包吗？"
 
 msgid "Wrong encrypt password"
-msgstr ""
+msgstr "错误的加密密码"
 
 msgid "Wrong number of recovery words:"
 msgstr "恢复词句数不正确："
 
 msgid "Wrong password"
-msgstr ""
+msgstr "错误的密码"
 
 msgid "Yes"
 msgstr "是"
@@ -2136,7 +2136,7 @@ msgid "You can trade it for other currencies like US Dollars, Euros, or Pounds."
 msgstr "你可以换其他货币，如美元、 欧元或英镑。"
 
 msgid "You control your bitcoin."
-msgstr "您可以控制您的比特币。"
+msgstr "掌控BSTK"
 
 msgid "You could sign the transaction later in your wallet details"
 msgstr ""
@@ -2219,3 +2219,8 @@ msgstr ""
 msgid "{{wallet.m}}-of-{{wallet.n}}"
 msgstr "{{wallet.m}}{{wallet.n}}"
 
+msgid "New personal wallet"
+msgstr "新建个人钱包"
+
+msgid "Enter your password again to confirm"
+msgstr "再次输入密码以确认"

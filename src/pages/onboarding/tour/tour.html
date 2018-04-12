@@ -12,6 +12,7 @@
 
 <ion-content no-bounce>
   <ion-slides pager="true" (ionSlideDidChange)="slideChanged()">
+    <!--
     <ion-slide>
       <h1 translate>Bitcoin is secure,
         <br/>digital money.</h1>
@@ -37,15 +38,15 @@
         </button>
       </div>
     </ion-slide>
-
+    -->
     <ion-slide>
       <h1 translate>You control your bitcoin.</h1>
       <p translate>This app stores your bitcoin with cutting-edge security.</p>
       <img src='assets/img/app/onboarding/tour-control.svg' />
       <div class="bottom-absolute">
-        <p translate>Not even BitPay can access it.</p>
+        <!--<p translate>Not even BitPay can access it.</p>-->
         <button ion-button block (click)="createDefaultWallet()" translate>
-          Create bitcoin wallet
+          创建钱包
         </button>
       </div>
     </ion-slide>
