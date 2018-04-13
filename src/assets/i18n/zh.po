@@ -792,7 +792,7 @@ msgid "Gift card expired"
 msgstr "礼品卡过期"
 
 msgid "Go Back"
-msgstr "返回	#"
+msgstr "返回"
 
 msgid "Go back"
 msgstr "上一页"
@@ -858,7 +858,7 @@ msgid "I understand that my funds are held securely on this device, not by a com
 msgstr ""
 
 msgid "I'm sure"
-msgstr "确信"
+msgstr "确认"
 
 msgid "If enabled, Bitcoin Cash addresses will be shown using Copay style address, and not the new cashaddr format."
 msgstr ""
@@ -1209,7 +1209,7 @@ msgid "Open GitHub Project"
 msgstr "打开 GitHub 项目"
 
 msgid "Open Insight"
-msgstr "开放的洞察力"
+msgstr "访问账本浏览"
 
 msgid "Open Translation Community"
 msgstr "开放式翻译社区"
@@ -1959,7 +1959,7 @@ msgid "View Confirmation Status"
 msgstr ""
 
 msgid "View Transaction on Insight"
-msgstr "查看交易记录的洞察"
+msgstr "在账本浏览器查看交易记录"
 
 msgid "View Update"
 msgstr "查看更新"

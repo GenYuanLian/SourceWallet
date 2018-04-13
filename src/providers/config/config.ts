@@ -202,7 +202,7 @@ const configDefault: Config = {
   },
 
   blockExplorerUrl: {
-    btc: 'insight.bitpay.com',
+    btc: 'block.genyuanlian.com',
     bch: 'bch-insight.bitpay.com'
   }
 };
