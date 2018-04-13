@@ -69,6 +69,7 @@
       </ion-note>
       <i class="icon bp-arrow-right"></i>
     </ion-item>
+    <!--
     <ion-item-divider *ngIf="copayers">Copayers</ion-item-divider>
     <ion-item *ngFor="let copayer of copayers">
       <h2>{{copayer.name}}</h2>
@@ -77,6 +78,7 @@
       </ion-note>
       <i class="icon bp-arrow-right"></i>
     </ion-item>
+    -->
     <ion-item-divider translate>Extended Public Keys</ion-item-divider>
     <ion-item *ngFor="let pk of pubKeys" copy-to-clipboard="{{pk}}">
       <h2 translate>Copayer {{$index}}</h2>

@@ -14,7 +14,9 @@
       </div>
       <div class="amount-label">
         <div class="amount">{{tx.amount | satToUnit: tx.coin}}</div>
+        <!--
         <div class="alternative">{{tx.amount | satToFiat: tx.coin}}</div>
+        -->
       </div>
     </ion-item>
 
@@ -30,12 +32,14 @@
       </div>
       <div *ngIf="wallet && tx.txp[wallet.id]">
         <span class="fee-amount">{{tx.txp[wallet.id].fee | satToUnit: tx.coin}}</span>
+        <!--
         <div class="fee-details">
           {{tx.txp[wallet.id].fee | satToFiat: tx.coin}}
           <span *ngIf="tx.txp[wallet.id].feeRatePerStr" [ngClass]="{'warn':tx.txp[wallet.id].feeTooHigh}" translate>
             {{tx.txp[wallet.id].feeRatePerStr}} of total amount
           </span>
         </div>
+        -->
       </div>
       <ion-note item-end>
         {{tx.feeLevelName | translate}}

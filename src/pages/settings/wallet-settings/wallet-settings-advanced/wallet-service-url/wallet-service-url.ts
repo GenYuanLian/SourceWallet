@@ -67,7 +67,7 @@ export class WalletServiceUrlPage {
       case 'prod':
       case 'production':
         // bws = 'https://bws.bitpay.com/bws/api'
-        bws= 'http://119.28.19.103:3232/bws/api'
+        bws= 'http://bws.genyuanlian.com:3232/bws/api'
         break;
       case 'sta':
       case 'staging':

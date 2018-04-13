@@ -1,6 +1,6 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Import wallet</ion-title>
+    <ion-title>{{"Import wallet" | translate}}</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -33,14 +33,14 @@
 
   <form [formGroup]="importForm" (ngSubmit)="import()">
     <ion-item *ngIf="selectedTab == 'words'">
-      <ion-label stacked>Type the recovery phrase (usually 12 words)</ion-label>
+      <ion-label stacked translate>Type the recovery phrase (usually 12 words)</ion-label>
       <ion-textarea formControlName="words" [value]="importForm.value.words"></ion-textarea>
       <ion-icon *ngIf="!fromOnboarding" class="scanner-icon" name="qr-scanner" item-right (click)="openScanner()"></ion-icon>
     </ion-item>
 
     <div *ngIf="selectedTab == 'file'">
       <ion-item *ngIf="!isSafari && !isCordova">
-        <ion-label stacked>Choose a backup file from your computer</ion-label>
+        <ion-label stacked translate>Choose a backup file from your computer</ion-label>
         <ion-input type="file" accept="json" [(ngModel)]="formFile" (change)="fileChangeEvent($event)" formControlName="file"></ion-input>
       </ion-item>
 
@@ -50,7 +50,7 @@
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Password</ion-label>
+        <ion-label stacked translate>Password</ion-label>
         <ion-input type="password" formControlName="filePassword"></ion-input>
       </ion-item>
     </div>
@@ -67,17 +67,17 @@
     <ion-item-divider></ion-item-divider>
 
     <ion-item (click)="toggleShowAdvOpts()">
-      <ion-label *ngIf="!showAdvOpts">Show advanced options</ion-label>
-      <ion-label *ngIf="showAdvOpts">Hide advanced options</ion-label>
+      <ion-label *ngIf="!showAdvOpts" translate>Show advanced options</ion-label>
+      <ion-label *ngIf="showAdvOpts" translate>Hide advanced options</ion-label>
     </ion-item>
 
     <div *ngIf="showAdvOpts">
       <div *ngIf="selectedTab == 'words'">
         <ion-item>
-          <ion-label stacked>Password</ion-label>
+          <ion-label stacked translate>Password</ion-label>
           <ion-input type="password" formControlName="mnemonicPassword"></ion-input>
         </ion-item>
-
+<!--
         <ion-item>
           <ion-label stacked>Derivation path</ion-label>
           <ion-input type="text" formControlName="derivationPath" [value]="importForm.value.derivationPath"></ion-input>
@@ -87,16 +87,18 @@
           <ion-label stacked>Testnet</ion-label>
           <ion-toggle color="primary" formControlName="testnet" [(ngModel)]="testnetEnabled" (ionChange)="setDerivationPath()"></ion-toggle>
         </ion-item>
+-->
       </div>
-
+<!--
       <ion-item>
         <ion-label stacked>Wallet service URL</ion-label>
         <ion-input type="text" formControlName="bwsURL"></ion-input>
       </ion-item>
+-->
     </div>
   </form>
 </ion-content>
 
 <ion-footer>
-  <button ion-button block class="button-footer" (click)="import()" [disabled]="!importForm.valid">Import wallet</button>
+  <button ion-button block class="button-footer" (click)="import()" [disabled]="!importForm.valid"><span translate>Import wallet</span></button>
 </ion-footer>

@@ -192,7 +192,7 @@ msgid "Bitcoin (BTC) miner fees are high due to record demand for limited space 
 msgstr "我们不控制网络费用"
 
 msgid "Bitcoin Address"
-msgstr "比特币地址"
+msgstr "BSTK地址"
 
 msgid "Bitcoin Cash Wallets"
 msgstr "比特币现金钱包"
@@ -816,7 +816,7 @@ msgid "Hide"
 msgstr "隱藏"
 
 msgid "Hide Balance"
-msgstr "隐藏的平衡"
+msgstr "隐藏余额"
 
 msgid "Hide advanced options"
 msgstr "隐藏高级选项"
@@ -848,6 +848,9 @@ msgstr ""
 msgid "I understand"
 msgstr "我知道了"
 
+msgid "I UNDERSTAND"
+msgstr "我知道了"
+
 msgid "I understand that if this app is moved to another device or deleted, my bitcoin can only be recovered with the backup phrase"
 msgstr ""
 
@@ -855,13 +858,16 @@ msgid "I understand that my funds are held securely on this device, not by a com
 msgstr ""
 
 msgid "I'm sure"
-msgstr ""
+msgstr "确信"
 
 msgid "If enabled, Bitcoin Cash addresses will be shown using Copay style address, and not the new cashaddr format."
 msgstr ""
 
 msgid "If enabled, all sensitive information (private key and recovery phrase) and actions (spending and exporting) associated with this wallet will be protected."
 msgstr "如果启用，与此钱包相关的所有敏感信息（私钥、回复短语）和操作（消费、导出）都将受到保护。"
+
+msgid "Complete the backup process to use this option"
+msgstr "完成钱包备份以启用此项功能"
 
 msgid "If enabled, the Recent Transactions card - a list of transactions occuring across all wallets - will appear in the Home tab."
 msgstr "如果启用，最近的交易卡-交易发生跨所有钱包名单-将出现在主页选项卡。"
@@ -873,7 +879,7 @@ msgid "If you have additional feedback, please let us know by tapping the \"Send
 msgstr "如果你有额外的反馈，请让我们知道通过点击设置选项卡中的\"发送反馈\"选项。"
 
 msgid "If you take a screenshot, your backup may be viewed by other apps. You can make a safe backup with physical paper and a pen."
-msgstr ""
+msgstr "如果抓屏，你的备份有可能被其它APP读取到。请写在纸上进行物理备份"
 
 msgid "Import wallet"
 msgstr "导入钱包"
@@ -930,7 +936,7 @@ msgid "Is this email address correct?"
 msgstr "此电子邮件地址是正确的？"
 
 msgid "It's a good idea to avoid reusing addresses - this both protects your privacy and keeps your bitcoins secure against hypothetical attacks by quantum computers."
-msgstr ""
+msgstr "每次使用新地址是一个好主意，这样可以保护您的隐私，并且降低您的资产遭受可能的量子计算攻击威胁"
 
 msgid "It's important that you write your backup phrase down correctly. If something happens to your wallet, you'll need this backup to recover your money. Please review your backup and try again."
 msgstr "它是重要的你写你备份的短语正确。如果发生什么事情到你的钱包，你会需要此备份来恢复你的钱。请检查您的备份并再试一次。"
@@ -1167,7 +1173,7 @@ msgid "Now is a good time to backup your wallet. If this device is lost, it is i
 msgstr ""
 
 msgid "Now is a perfect time to assess your surroundings. Nearby windows? Hidden cameras? Shoulder-spies?"
-msgstr "现在是一个完美的时间来评估你的周围。附近的窗户吗？隐藏的摄像机？肩-间谍吗？"
+msgstr "现在是一个完美的时间来评估你的周围。附近的窗户吗？隐藏的摄像机？"
 
 msgid "OK"
 msgstr "好的"
@@ -1509,7 +1515,7 @@ msgid "Scanning funds"
 msgstr ""
 
 msgid "Screenshots are not secure"
-msgstr ""
+msgstr "捕捉屏幕不安全"
 
 msgid "Search a contact"
 msgstr ""
@@ -1548,7 +1554,7 @@ msgid "Send Max amount"
 msgstr ""
 
 msgid "Send Money"
-msgstr "寄钱"
+msgstr "转账"
 
 msgid "Send addresses by email"
 msgstr "通过电邮发送地址"
@@ -1785,7 +1791,7 @@ msgid "The total amount of bitcoin stored in this wallet."
 msgstr "比特币存储在这个钱包的总量。"
 
 msgid "The transaction history and every new incoming transaction are cached in the app. This feature clean this up and synchronizes again from the server"
-msgstr ""
+msgstr "交易记录被缓存在本地，如果清空缓存，将与服务器进行重新同步"
 
 msgid "There is an error in the form"
 msgstr "表格中有错误"
@@ -1881,7 +1887,7 @@ msgid "Transfer to Bitcoin Wallet"
 msgstr ""
 
 msgid "Transfer to Contact"
-msgstr ""
+msgstr "联系人转账"
 
 msgid "Try again in {{expires}}"
 msgstr "在 {{expires}} 中再试一次"
@@ -1890,7 +1896,7 @@ msgid "Turn bitcoin into dollars, swipe anywhere Visa&reg; is accepted."
 msgstr ""
 
 msgid "Type the recovery phrase (usually 12 words)"
-msgstr ""
+msgstr "输入助记词（通常12字）"
 
 msgid "Uh oh..."
 msgstr ""
@@ -2097,7 +2103,7 @@ msgid "Withdraw"
 msgstr ""
 
 msgid "Without encryption, a thief or another application on this device may be able to access your funds."
-msgstr ""
+msgstr "没有密码保护，小偷或本机其它应用有可能窃取您的资产"
 
 msgid "Would you be willing to rate {{appName}} in the app store?"
 msgstr "你会愿意率 {{appName}} app store 中的吗？"
@@ -2121,7 +2127,7 @@ msgid "You can make contributions by signing up on our Crowdin community transla
 msgstr "您可以通过签约我们 Crowdin 社区翻译网站作出贡献。我们期待你的听力 ！"
 
 msgid "You can scan bitcoin addresses, payment requests, paper wallets, and more."
-msgstr "您可以扫描比特币地址、 付款申请、 纸钱包和更多。"
+msgstr "您可以扫描BSTK地址、 付款申请、 纸钱包和更多。"
 
 msgid "You can see the latest developments and contribute to this open source app by visiting our project on GitHub."
 msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程序通过在 GitHub 上访问我们的项目。"
@@ -2224,3 +2230,69 @@ msgstr "新建个人钱包"
 
 msgid "Enter your password again to confirm"
 msgstr "再次输入密码以确认"
+
+msgid "Wallet name"
+msgstr "钱包名称"
+
+msgid "Show advanced options"
+msgstr "显示高级选项"
+
+msgid "Hide advanced options"
+msgstr "隐藏高级选项"
+
+msgid "Wallet key"
+msgstr "钱包Key"
+
+msgid "Single address"
+msgstr "单一地址"
+
+msgid "Request Spending Password"
+msgstr "设置转账密码"
+
+msgid "Enter Spending Password"
+msgstr "输入转账密码"
+
+msgid "Wallet Name (at creation)"
+msgstr "钱包名称（创建时）"
+
+msgid "Wallet Configuration (m-n)"
+msgstr "钱包配置（m-n）"
+
+msgid "Wallet Network"
+msgstr "钱包网络"
+
+msgid "Transfer to Srcchain Wallet"
+msgstr "转账至钱包"
+
+msgid "Search or enter srcchain address"
+msgstr "搜索或输入BSTK地址"
+
+msgid "BSTK miner fee"
+msgstr "矿工费用"
+
+msgid "Srcchain Wallets"
+msgstr "钱包列表"
+
+msgid "Words"
+msgstr "助记词"
+
+msgid "File"
+msgstr "文件"
+
+msgid "Add Wallet"
+msgstr "创建钱包"
+
+msgid "Create personal wallet"
+msgstr "新建个人钱包"
+
+msgid "Get started with SourceWallet"
+msgstr "开始使用SourceWallet"
+
+msgid "I understand that my funds are held securely on this device, not by a company."
+msgstr "我明白我的资产安全的保管在本机，并非某个公司"
+
+msgid "I understand that if this app is moved to another device or deleted, my founds can only be recovered with the backup phrase."
+msgstr "我明白如果本应用被移除或转移至其它设备，我的资产可以通过备份文件恢复"
+
+msgid "I have read, understood, and agree"
+msgstr "我已经阅读，理解并且同意"
