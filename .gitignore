@@ -87,3 +87,5 @@ Temporary Items
 Session.vim
 .netrwhist
 *~
+
+*.keystore
