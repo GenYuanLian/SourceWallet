@@ -3,6 +3,7 @@ import { Platform, ModalController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Subscription } from 'rxjs';
+import { AppUpdate } from '@ionic-native/app-update';
 
 //providers
 import { Logger } from '../providers/logger/logger';
@@ -48,7 +49,8 @@ export class CopayApp {
     private amazonProvider: AmazonProvider,
     private bitPayCardProvider: BitPayCardProvider,
     private mercadoLibreProvider: MercadoLibreProvider,
-    private shapeshiftProvider: ShapeshiftProvider
+    private shapeshiftProvider: ShapeshiftProvider,
+    private androidAppUpdate: AppUpdate
   ) {
     this.initializeApp();
   }
@@ -61,6 +63,11 @@ export class CopayApp {
           this.app.info.nameCase +
           ' - v' + this.app.info.version +
           ' #' + this.app.info.commitHash);
+
+        if (this.platform.is('android')) {
+          const updateUrl = 'http://static.genyuanlian.com/android_update.xml';
+          this.androidAppUpdate.checkAppUpdate(updateUrl).then(() => { console.log('Update available') });
+        }
 
         if (this.platform.is('cordova')) {
           this.statusBar.show();

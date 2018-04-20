@@ -15,6 +15,7 @@ import { SocialSharing } from '@ionic-native/social-sharing';
 import { Toast } from '@ionic-native/toast';
 import { TouchID } from '@ionic-native/touch-id';
 import { FCM } from '@ionic-native/fcm';
+import { AppUpdate } from '@ionic-native/app-update';
 
 /* Modules */
 import { MomentModule } from 'angular2-moment';
@@ -479,6 +480,7 @@ export function createTranslateLoader(http: HttpClient) {
     ShapeshiftProvider,
     StatusBar,
     SplashScreen,
+    AppUpdate,
     ScanProvider,
     SocialSharing,
     Toast,
