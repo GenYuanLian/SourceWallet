@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/GenYuanLian/SourceWallet.svg?branch=master)](https://travis-ci.org/GenYuanLian/SourceWallet/builds)
 
 ## Testing in a Browser
 
