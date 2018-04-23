@@ -95,6 +95,9 @@ export class TxFormatProvider {
     if (!tx || tx.action == 'invalid')
       return tx;
 
+    //hard code for BSTK
+    coin = 'BSTK';
+
     // New transaction output format
     if (tx.outputs && tx.outputs.length) {
 
@@ -243,5 +246,4 @@ export class TxFormatProvider {
     var unitDecimals = settings.unitDecimals;
     return parseFloat((amount * satToUnit).toFixed(unitDecimals));
   };
-
 }

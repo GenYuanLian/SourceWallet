@@ -7,7 +7,7 @@
 </ion-header>
 <ion-content no-bounce>
   <div *ngIf="hasBtcWallets || hasBchWallets">
-    <ion-searchbar placeholder="Search or enter srcchain address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
+    <ion-searchbar translate placeholder="BSTK address" [(ngModel)]="search" (ngModelChange)="findContact(search)"></ion-searchbar>
 
     <div *ngIf="filteredContactsList && filteredContactsList[0]">
       <ion-item-divider>

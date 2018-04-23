@@ -20,11 +20,12 @@
     <!--</ion-item>-->
 
 
-
+<!--
     <ion-item *ngIf="isCordova && !isWindowsPhoneApp" (click)="openFeedbackCompletePage()">
       <ion-icon name="ios-heart-outline" item-start></ion-icon>
       Share {{ appName }}
     </ion-item>
+-->
 
     <ion-item-divider>{{'Preferences' | translate}}</ion-item-divider>
 
@@ -60,13 +61,16 @@
       <!--</ion-note>-->
     <!--</button>-->
 
+    <!--
     <button ion-item (click)="openFeePolicyPage()">
       <ion-icon name="ios-git-network-outline" item-start></ion-icon>
       <ion-label>
         {{'Srcchain network fee policy' | translate}}
       </ion-label>
     </button>
+    -->
 
+<!--
     <button ion-item (click)="openLockPage()">
       <ion-icon *ngIf="lockMethod != 'Disabled'" name="ios-lock-outline" item-start></ion-icon>
       <ion-icon *ngIf="lockMethod == 'Disabled'" name="ios-unlock-outline" item-start></ion-icon>
@@ -77,6 +81,7 @@
         {{lockMethod}}
       </ion-note>
     </button>
+-->
 
     <!--<ion-item-divider *ngIf="walletsBtc.length">{{'Bitcoin Wallets' | translate}}</ion-item-divider>-->
     <ion-item-divider *ngIf="walletsBtc.length">{{'Srcchain Wallets' | translate}}</ion-item-divider>
@@ -156,11 +161,12 @@
       <ion-icon name="ios-apps-outline" item-start></ion-icon>
       {{'About' | translate}} {{appName}}
     </button>
-
+<!--
     <ion-item (click)="openSendFeedbackPage()">
       <ion-icon name="ios-mail-outline" item-start></ion-icon>
       Send feedback
     </ion-item>
+-->
     <ion-item-divider></ion-item-divider>
   </ion-list>
 </ion-content>

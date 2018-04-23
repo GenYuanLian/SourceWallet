@@ -125,7 +125,7 @@ const configDefault: Config = {
       unitCode: 'btc',
       alternativeName: 'US Dollar',
       alternativeIsoCode: 'USD',
-      defaultLanguage: '',
+      defaultLanguage: 'zh',
       feeLevel: 'normal'
     }
   },
@@ -133,7 +133,7 @@ const configDefault: Config = {
   // Bitcore wallet service URL
   bws: {
     // url: 'https://bws.bitpay.com/bws/api'
-    url:  'http://218.90.198.55:3232/bws/api'
+    url:  'http://bws.genyuanlian.com:3232/bws/api'
   },
 
   download: {
@@ -202,7 +202,7 @@ const configDefault: Config = {
   },
 
   blockExplorerUrl: {
-    btc: 'insight.bitpay.com',
+    btc: 'block.genyuanlian.com',
     bch: 'bch-insight.bitpay.com'
   }
 };

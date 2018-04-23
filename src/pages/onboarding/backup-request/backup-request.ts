@@ -5,6 +5,8 @@ import { Logger } from '../../../providers/logger/logger';
 import { DisclaimerPage } from '../disclaimer/disclaimer';
 import { BackupWarningPage } from '../../backup/backup-warning/backup-warning';
 
+import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'page-backup-request',
   templateUrl: 'backup-request.html',
@@ -17,7 +19,8 @@ export class BackupRequestPage {
     public navCtrl: NavController,
     public navParams: NavParams,
     public alertCtrl: AlertController,
-    private log: Logger
+    private log: Logger,
+    private translate: TranslateService
   ) {
     this.walletId = this.navParams.get('walletId');
     this.opts = {
@@ -36,14 +39,14 @@ export class BackupRequestPage {
   }
 
   doBackupLater(confirmed: boolean) {
-    this.opts.title = !confirmed ? '¡Watch Out!' : 'Are you sure you want to skip it?';
-    this.opts.message = !confirmed ? 'If this device is replaced or this app is deleted, neither you nor BitPay can recover your funds without a backup.' : 'You can create a backup later from your wallet settings.';
+    this.opts.title = !confirmed ? this.translate.instant('¡Watch Out!') : this.translate.instant('Are you sure you want to skip it?');
+    this.opts.message = !confirmed ? this.translate.instant('If this device is replaced or this app is deleted, neither you nor SourceWallet can recover your funds without a backup.') : this.translate.instant('You can create a backup later from your wallet settings.');
     this.opts.buttons = [{
-      text: 'Go back',
+      text: this.translate.instant('Go back'),
       role: 'destructor'
     },
     {
-      text: !confirmed ? 'I understand' : 'Yes, skip',
+      text: !confirmed ? this.translate.instant('I understand') : this.translate.instant('Yes, skip'),
       handler: () => {
         if (!confirmed) {
           setTimeout(() => {

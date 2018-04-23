@@ -12,6 +12,8 @@ export class SatToUnitPipe implements PipeTransform {
   ) {
   }
   transform(amount: number, coin: string): any {
+    // hardcoded coin
+    coin = "BSTK";
     return this.decimalPipe.transform(amount / 1e8, '1.2-6') + ' ' + coin.toUpperCase();
   }
 }

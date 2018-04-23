@@ -40,7 +40,7 @@ export class BwcProvider {
     //note opts use `bwsurl` all lowercase;
     let bwc = new BWC({
       // baseUrl: opts.bwsurl || 'https://bws.bitpay.com/bws/api',
-      baseUrl: opts.bwsurl || 'http://218.90.198.55:3232/bws/api',
+      baseUrl: opts.bwsurl || 'http://bws.genyuanlian.com:3232/bws/api',
       verbose: opts.verbose,
       timeout: 100000,
       transports: ['polling'],
