@@ -156,7 +156,7 @@ msgid "Average confirmation time"
 msgstr "平均确认时间"
 
 msgid "BTC wallets"
-msgstr "比特币钱包"
+msgstr "BSTK钱包"
 
 msgid "Backup"
 msgstr "备份"
@@ -195,7 +195,7 @@ msgid "Bitcoin Address"
 msgstr "BSTK地址"
 
 msgid "Bitcoin Cash Wallets"
-msgstr "比特币现金钱包"
+msgstr "BSTK现金钱包"
 
 msgid "Bitcoin Network Fee Policy"
 msgstr "网络手续费策略"
@@ -204,16 +204,16 @@ msgid "Bitcoin Wallets"
 msgstr "钱包"
 
 msgid "Bitcoin cash Payment"
-msgstr "比特币现金支付"
+msgstr "BSTK现金支付"
 
 msgid "Bitcoin is a currency."
-msgstr "比特币是一种货币。"
+msgstr "BSTK是一种货币。"
 
 msgid "Bitcoin is different &ndash; it cannot be safely held with a bank or web service."
-msgstr "比特币是不同 — — 它不能安全地举行以银行或 web 服务。"
+msgstr "BSTK是不同 — — 它不能安全地举行以银行或 web 服务。"
 
 msgid "Bitcoin is secure, digital money."
-msgstr "比特币是安全的数字货币。"
+msgstr "BSTK是安全的数字货币。"
 
 msgid "Bitcoin miner fee"
 msgstr ""
@@ -240,7 +240,7 @@ msgid "Buy Gift Card"
 msgstr ""
 
 msgid "Buying Bitcoin..."
-msgstr "正在发送 比特币..."
+msgstr "正在发送 BSTK..."
 
 msgid "Buying Gift Card..."
 msgstr ""
@@ -357,7 +357,7 @@ msgid "Contribute translations"
 msgstr ""
 
 msgid "Copay only supports Bitcoin Cash using new version numbers addresses"
-msgstr "Copay只支持新版本的比特币现金地址"
+msgstr "Copay只支持新版本的BSTK现金地址"
 
 msgid "Copayer already in this wallet"
 msgstr "Copayer 已经在这个钱包里"
@@ -1248,7 +1248,7 @@ msgid "Paste the backup plain text code"
 msgstr ""
 
 msgid "Pay 0% fees to turn bitcoin into dollars."
-msgstr "0%付费以比特币变成美元。"
+msgstr "0%付费以BSTK变成美元。"
 
 msgid "Pay To"
 msgstr "支付给"
@@ -1521,7 +1521,7 @@ msgid "Search a contact"
 msgstr ""
 
 msgid "Search or enter bitcoin address"
-msgstr "搜索或输入比特币地址"
+msgstr "搜索或输入BSTK地址"
 
 msgid "Search your currency"
 msgstr "搜索您的货币"
@@ -1542,7 +1542,7 @@ msgid "Self-signed Certificate"
 msgstr "自签名证书"
 
 msgid "Selling Bitcoin..."
-msgstr "出售比特币......"
+msgstr "出售BSTK......"
 
 msgid "Send"
 msgstr "发送"
@@ -1683,7 +1683,7 @@ msgid "Spendable balance"
 msgstr ""
 
 msgid "Spending this balance will need significant Bitcoin network fees"
-msgstr "这笔交易将需要非常高的比特币网络手续费"
+msgstr "这笔交易将需要非常高的BSTK网络手续费"
 
 msgid "Start"
 msgstr ""
@@ -1746,13 +1746,13 @@ msgid "The Wallet Service URL"
 msgstr ""
 
 msgid "The amount of bitcoin immediately spendable from this wallet."
-msgstr "比特币立即可从这个钱包的金额。"
+msgstr "BSTK立即可从这个钱包的金额。"
 
 msgid "The amount of bitcoin stored in this wallet that is allocated as inputs to your pending transaction proposals. The amount is determined using unspent transaction outputs associated with this wallet and may be more than the actual amounts associated with your pending transaction proposals."
-msgstr "比特币存储在分配作为你挂起的事务建议的输入这个钱包中的金额。量确定使用未用余额交易记录输出与这个钱包关联，可能会与您挂起的事务建议相关联的实际数额超过。"
+msgstr "BSTK存储在分配作为你挂起的事务建议的输入这个钱包中的金额。量确定使用未用余额交易记录输出与这个钱包关联，可能会与您挂起的事务建议相关联的实际数额超过。"
 
 msgid "The amount of bitcoin stored in this wallet with less than 1 blockchain confirmation."
-msgstr "比特币存储在与小于 1 blockchain 确认这个钱包中的金额。"
+msgstr "BSTK存储在与小于 1 blockchain 确认这个钱包中的金额。"
 
 msgid "The derivation path"
 msgstr "衍生路径"
@@ -1788,7 +1788,7 @@ msgid "The spend proposal is not pending"
 msgstr "花费提议不是未决"
 
 msgid "The total amount of bitcoin stored in this wallet."
-msgstr "比特币存储在这个钱包的总量。"
+msgstr "BSTK存储在这个钱包的总量。"
 
 msgid "The transaction history and every new incoming transaction are cached in the app. This feature clean this up and synchronizes again from the server"
 msgstr "交易记录被缓存在本地，如果清空缓存，将与服务器进行重新同步"
@@ -1830,7 +1830,7 @@ msgid "To"
 msgstr "发送到"
 
 msgid "To get started, you'll need to create a bitcoin wallet and get some bitcoin."
-msgstr "若要开始，您将需要创建一个比特币的钱包，并获得一些比特币。"
+msgstr "若要开始，您将需要创建一个BSTK的钱包，并获得一些BSTK。"
 
 msgid "Top up in progress..."
 msgstr "在进展充值..."
@@ -2133,7 +2133,7 @@ msgid "You can see the latest developments and contribute to this open source ap
 msgstr "你可以看到最新的事态发展和贡献这个开放源码应用程序通过在 GitHub 上访问我们的项目。"
 
 msgid "You can spend bitcoin at millions of websites and stores worldwide."
-msgstr "你可以花比特币在数以百万计的网站和世界各地的商店。"
+msgstr "你可以花BSTK在数以百万计的网站和世界各地的商店。"
 
 msgid "You can still export it from Advanced &gt; Export."
 msgstr "你仍然可以将其导出从高级 &gt; 出口。"
@@ -2160,10 +2160,10 @@ msgid "Your Gift Cards"
 msgstr "礼品卡"
 
 msgid "Your bitcoin wallet is backed up!"
-msgstr "你的比特币钱包被备份 ！"
+msgstr "你的BSTK钱包被备份 ！"
 
 msgid "Your bitcoin wallet is ready!"
-msgstr "你的比特币钱包是准备好了 ！"
+msgstr "你的BSTK钱包是准备好了 ！"
 
 msgid "Your extended private keys are all that is needed to access your bitcoin funds. Be sure to protect your private keys and store them only on secure devices. BitPay does not have access to your private keys, so you alone are responsible for your keys. If you share key access with external services, you take responsibility for the risk of theft or breach. Only advanced users should handle extended private keys directly."
 msgstr ""
