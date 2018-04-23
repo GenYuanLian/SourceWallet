@@ -1,7 +1,10 @@
 language: node_js
 
 node_js:
-  - "stable"
+  - "v8.9.4"
+
+before_install:
+  - npm i -g npm@5.5.1
 
 script:
   npm run apply:SourceWallet && cordova prepare && npm run fix:fcm
