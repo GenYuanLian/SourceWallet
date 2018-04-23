@@ -1,0 +1,8 @@
+language: node_js
+
+script:
+  npm run apply:SourceWallet && cordova prepare && npm run fix:fcm
+
+cache:
+  directories:
+    - "node_modules"
