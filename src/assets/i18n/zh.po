@@ -1647,7 +1647,7 @@ msgid "Signing transaction..."
 msgstr ""
 
 msgid "Since only you control your money, you’ll need to save your backup phrase in case this app is deleted."
-msgstr "因为只有你控制你的数字资产，你会需要删除此应用程序的情况下保存您备份的短语。"
+msgstr "请备份您的助记词，在重装应用的情况下，可以利用助记词恢复钱包。"
 
 msgid "Single address"
 msgstr ""
@@ -2296,3 +2296,36 @@ msgstr "我明白如果本应用被移除或转移至其它设备，我的资产
 
 msgid "I have read, understood, and agree"
 msgstr "我已经阅读，理解并且同意"
+
+msgid "Enter new spending password"
+msgstr "输入转账密码"
+
+msgid "Confirm your new spending password"
+msgstr "确认转账密码"
+
+msgid "Your wallet key will be encrypted. The Spending Password cannot be recovered. Be sure to write it down."
+msgstr "转账密码不可恢复，请牢记"
+
+msgid "¡Watch Out!"
+msgstr "注意"
+
+msgid "Are you sure you want to skip it?"
+msgstr "确定要略过吗？"
+
+msgid "If this device is replaced or this app is deleted, neither you nor SourceWallet can recover your funds without a backup."
+msgstr "如果删除应用，无备份的情况下无法恢复钱包"
+
+msgid "You can create a backup later from your wallet settings."
+msgstr "您可以从设置中创建备份"
+
+msgid "Go back"
+msgstr "返回"
+
+msgid "I understand"
+msgstr "确认"
+
+msgid "Yes, skip"
+msgstr "是的，忽略"
+
+msgid "Confirm & Finish"
+msgstr "确认"
