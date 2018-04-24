@@ -554,7 +554,8 @@ export class ConfirmPage {
               return resolve();
 
             let amount = (this.tx.amount / 1e8).toFixed(8);
-            let unit = this.config.wallet.settings.unitName;
+            //let unit = this.config.wallet.settings.unitName;
+            let uint = 'BSTK';
             let name = wallet.name;
             let message = 'Sending ' + amount + ' ' + unit + ' from your ' + name + ' wallet'; // TODO: translate
             let okText = this.translate.instant('Confirm');
