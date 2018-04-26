@@ -1908,10 +1908,10 @@ msgid "Unsent transactions"
 msgstr "未发送的交易"
 
 msgid "Unused addresses"
-msgstr ""
+msgstr "未使用地址"
 
 msgid "Unused addresses limit"
-msgstr ""
+msgstr "未使用地址上限"
 
 msgid "Update Available"
 msgstr "可用的更新"
@@ -1965,7 +1965,7 @@ msgid "View Update"
 msgstr "查看更新"
 
 msgid "View all addresses"
-msgstr ""
+msgstr "显示所有地址"
 
 msgid "View on blockchain"
 msgstr "在 blockchain 上查看"
@@ -2026,9 +2026,6 @@ msgstr "创建的钱包"
 
 msgid "Wallet incomplete and broken"
 msgstr "钱包不完整和损坏"
-
-msgid "Wallet information"
-msgstr ""
 
 msgid "Wallet invitation"
 msgstr ""
@@ -2329,3 +2326,13 @@ msgstr "是的，忽略"
 
 msgid "Confirm & Finish"
 msgstr "确认"
+
+msgid "Approximate Srcchain network fee to transfer wallet's balance (with normal priority)"
+msgstr "普通优先级的转账费率"
+
+msgid "We'll confirm on the next screen."
+msgstr "我们会在下一步确认这些助记词"
+
+msgid "I've written it down"
+msgstr "我已经写下助记词"
+
