@@ -1482,7 +1482,7 @@ msgid "Required number of signatures"
 msgstr ""
 
 msgid "Restore from backup"
-msgstr "从备份中还原"
+msgstr "导入钱包"
 
 msgid "Retrieving inputs information..."
 msgstr ""
