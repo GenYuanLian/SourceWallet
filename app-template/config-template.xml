@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.genyuanlian.*BUNDLENAME*"
+  xmlns:android="http://schemas.android.com/apk/res/android"
   version="*VERSION*"
   android-versionCode="*ANDROIDVERSION*"
   ios-CFBundleVersion="*VERSION*">
@@ -129,5 +130,9 @@
       <splash src="resources/*PACKAGENAME*/android/splash/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
       <splash src="resources/*PACKAGENAME*/android/splash/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
       <splash src="resources/*PACKAGENAME*/android/splash/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+
+      <custom-config-file target="AndroidManifest.xml" parent="/*">
+         <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+      </custom-config-file>
     </platform>
   </widget>
