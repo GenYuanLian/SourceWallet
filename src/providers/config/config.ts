@@ -132,28 +132,27 @@ const configDefault: Config = {
 
   // Bitcore wallet service URL
   bws: {
-    // url: 'https://bws.bitpay.com/bws/api'
     url:  'http://bws.genyuanlian.com:3232/bws/api'
   },
 
   download: {
     bitpay: {
-      url: 'https://bitpay.com/wallet'
+      url: ''
     },
     copay: {
-      url: 'https://copay.io/#download'
+      url: ''
     }
   },
 
   rateApp: {
     bitpay: {
-      ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=1149581638&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-      android: 'https://play.google.com/store/apps/details?id=com.bitpay.wallet',
+      ios: '',
+      android: '',
       wp: ''
     },
     copay: {
-      ios: 'http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=951330296&pageNumber=0&sortOrdering=2&type=Purple+Software&mt=8',
-      android: 'https://play.google.com/store/apps/details?id=com.bitpay.copay',
+      ios: '',
+      android: '',
       wp: ''
     }
   },
@@ -179,11 +178,11 @@ const configDefault: Config = {
   },
 
   rates: {
-    url: 'https://insight.bitpay.com:443/api/rates'
+    url: ''
   },
 
   release: {
-    url: 'https://api.github.com/repos/bitpay/copay/releases/latest'
+    url: ''
   },
 
   pushNotificationsEnabled: true,

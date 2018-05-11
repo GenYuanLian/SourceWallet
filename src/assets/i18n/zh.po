@@ -1968,7 +1968,7 @@ msgid "View all addresses"
 msgstr "显示所有地址"
 
 msgid "View on blockchain"
-msgstr "在 blockchain 上查看"
+msgstr "在区块浏览器中查看交易记录"
 
 msgid "Visit ShapeShift.io"
 msgstr ""
@@ -2336,3 +2336,5 @@ msgstr "我们会在下一步确认这些助记词"
 msgid "I've written it down"
 msgstr "我已经写下助记词"
 
+msgid "Srcchain network fee policy"
+msgstr "交易费用策略"
