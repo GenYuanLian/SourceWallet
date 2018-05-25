@@ -194,7 +194,8 @@ export class ScanPage {
       this.logger.debug('Scanner activated, setting to visible...');
       this.currentState = this.scannerStates.visible;
       this.scanProvider.scan().then((contents: string) => {
-        this.logger.debug('Scan returned: "' + contents + '"');
+        contents = contents.replace('srcchain:', '');
+        this.logger.debug('Scan returned as: "' + contents + '"');
         this.handleSuccessfulScan(contents);
       });
     });
