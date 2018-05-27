@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Logger } from '../../providers/logger/logger';
 import { NavController, App } from 'ionic-angular';
-import { FCM } from '@ionic-native/fcm';
+//import { FCM } from '@ionic-native/fcm';
 
 //providers
 import { ProfileProvider } from '../profile/profile';
@@ -33,14 +33,15 @@ export class PushNotificationsProvider {
     public logger: Logger,
     public appProvider: AppProvider,
     private app: App,
-    private bwcProvider: BwcProvider,
-    private FCMPlugin: FCM
+    private bwcProvider: BwcProvider
+    //private FCMPlugin: FCM
   ) {
     this.logger.info('PushNotificationsProvider initialized.');
     this.isIOS = this.platformProvider.isIOS;
     this.isAndroid = this.platformProvider.isAndroid;
     this.usePushNotifications = this.platformProvider.isCordova && !this.platformProvider.isWP;
 
+    /*
     if (this.usePushNotifications) {
 
       this.FCMPlugin.onTokenRefresh().subscribe((token: any) => {
@@ -63,7 +64,7 @@ export class PushNotificationsProvider {
           // Notification was received in foreground. Maybe the user needs to be notified.
         }
       });
-    }
+    }*/
 
   }
 
@@ -74,12 +75,13 @@ export class PushNotificationsProvider {
 
       this.logger.debug('Starting push notification registration...');
 
+      /*
       //Keep in mind the function will return null if the token has not been established yet.
       this.FCMPlugin.getToken().then((token: any) => {
         this.logger.debug('Get token for push notifications: ' + token);
         this._token = token;
         this.enable();
-      });
+      });*/
     });
   }
 

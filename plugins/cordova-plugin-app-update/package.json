@@ -1,0 +1,66 @@
+{
+  "_from": "cordova-plugin-app-update@^1.6.0",
+  "_id": "cordova-plugin-app-update@1.6.0",
+  "_inBundle": false,
+  "_integrity": "sha512-GR3gxxz9LYQ9/yo3ppdyPxOYt5rZgEyNsJXVTYBHGMJN9JDy+yaFBfUCK6Osg6xmgRlJl4nB7WKjty5uJjuOew==",
+  "_location": "/cordova-plugin-app-update",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-app-update@^1.6.0",
+    "name": "cordova-plugin-app-update",
+    "escapedName": "cordova-plugin-app-update",
+    "rawSpec": "^1.6.0",
+    "saveSpec": null,
+    "fetchSpec": "^1.6.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-app-update/-/cordova-plugin-app-update-1.6.0.tgz",
+  "_shasum": "ba1ecf7d1d99a65126455bc51ba8dfd19a972fce",
+  "_spec": "cordova-plugin-app-update@^1.6.0",
+  "_where": "/Users/ryanzhu/dev/genyuanlian/copay",
+  "author": {
+    "name": "vaenow"
+  },
+  "bugs": {
+    "url": "https://github.com/vaenow/cordova-plugin-app-update/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-app-update",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova App Update",
+  "devDependencies": {
+    "jshint": "^2.6.0"
+  },
+  "homepage": "https://github.com/vaenow/cordova-plugin-app-update#readme",
+  "keywords": [
+    "cordova",
+    "app",
+    "auto",
+    "update",
+    "updater",
+    "dynamic",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-app-update",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaenow/cordova-plugin-app-update.git"
+  },
+  "scripts": {
+    "jshint": "node node_modules/jshint/bin/jshint www && node node_modules/jshint/bin/jshint src && node node_modules/jshint/bin/jshint tests",
+    "test": "npm run jshint"
+  },
+  "version": "1.6.0"
+}

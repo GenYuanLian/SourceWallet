@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>149194066736-tukkdahsck00842frm4l7c2r04bhhj4l.apps.googleusercontent.com</string>
+	<string>380516266859-mav9behvflid6mf34pujl7vve1b1le86.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.149194066736-tukkdahsck00842frm4l7c2r04bhhj4l</string>
+	<string>com.googleusercontent.apps.380516266859-mav9behvflid6mf34pujl7vve1b1le86</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAygvOaO5hmkL2Vze66yVAGU2QhcoTyZFA</string>
+	<string>AIzaSyBf8egxPWaOnUovyhguvS1aHm2i2VJ1tx8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>149194066736</string>
+	<string>380516266859</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.bitpay.copay</string>
+	<string>com.genyuanlian.SourceWallet</string>
 	<key>PROJECT_ID</key>
-	<string>bitpay-wallet</string>
+	<string>sourcewallet-f39de</string>
 	<key>STORAGE_BUCKET</key>
-	<string>bitpay-wallet.appspot.com</string>
+	<string>sourcewallet-f39de.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:149194066736:ios:6de8942b48fea047</string>
+	<string>1:380516266859:ios:c35030ed0bd92628</string>
 	<key>DATABASE_URL</key>
-	<string>https://bitpay-wallet.firebaseio.com</string>
+	<string>https://sourcewallet-f39de.firebaseio.com</string>
 </dict>
 </plist>

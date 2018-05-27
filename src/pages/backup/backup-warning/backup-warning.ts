@@ -24,10 +24,10 @@ export class BackupWarningPage {
   openWarningModal() {
 
     let opts = {
-      title: 'Screenshots are not secure',
-      message: 'If you take a screenshot, your backup may be viewed by other apps. You can make a safe backup with physical paper and a pen',
+      title: '截屏并不安全',
+      message: '如果截屏，你的信息有可能被其它应用窥视. 记录在纸张上是更为安全的方式',
       buttons: [{
-        text: 'I understand',
+        text: '确认',
         handler: () => {
           this.navCtrl.push(BackupGamePage, {walletId: this.walletId, fromOnboarding: this.fromOnboarding});
         }

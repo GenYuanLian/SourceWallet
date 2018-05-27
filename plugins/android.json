@@ -1,0 +1,94 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-add-swift-support": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-clipboard": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-qrscanner": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-touch-id": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-spinner-dialog": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-uniquedeviceid": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-custom-config": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-customurlscheme": {
+      "URL_SCHEME": "bitcoin",
+      "SECOND_URL_SCHEME": "copay",
+      "THIRD_URL_SCHEME": "bitcoincash",
+      "ANDROID_SCHEME": " ",
+      "ANDROID_HOST": " ",
+      "ANDROID_PATHPREFIX": "/",
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-android-fingerprint-auth": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    },
+    "cordova-plugin-app-update": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-appversion": {
+      "PACKAGE_NAME": "com.genyuanlian.SourceWallet"
+    }
+  }
+}

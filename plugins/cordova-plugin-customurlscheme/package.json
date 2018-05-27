@@ -1,0 +1,70 @@
+{
+  "_from": "git+https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
+  "_id": "cordova-plugin-customurlscheme@4.3.0",
+  "_inBundle": false,
+  "_integrity": "sha1-+wwsiu+Diz4yi5A3xJeUUlPGDjY=",
+  "_location": "/cordova-plugin-customurlscheme",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
+    "rawSpec": "https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
+    "saveSpec": "git+https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
+    "fetchSpec": "https://github.com/cmgustavo/Custom-URL-scheme.git",
+    "gitCommittish": "v4.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/cmgustavo/Custom-URL-scheme.git#78db58c0926a5b5f5e509d9e3d19824037c2c045",
+  "_spec": "https://github.com/cmgustavo/Custom-URL-scheme.git#v4.0",
+  "_where": "/Users/ryanzhu/dev/genyuanlian/copay",
+  "author": {
+    "name": "Eddy Verbruggen",
+    "email": "eddyverbruggen@gmail.com",
+    "url": "https://github.com/EddyVerbruggen"
+  },
+  "bugs": {
+    "url": "https://github.com/cmgustavo/Custom-URL-scheme/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-customurlscheme",
+    "platforms": [
+      "ios",
+      "android",
+      "windows8",
+      "windows"
+    ]
+  },
+  "deprecated": false,
+  "description": "Launch your app by using this URL:  mycoolapp://, you can add a path and even pass params like this: mycoolerapp://somepath?foo=bar",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=7.1.0"
+    }
+  ],
+  "homepage": "https://github.com/cmgustavo/Custom-URL-scheme#readme",
+  "keywords": [
+    "Custom URL Scheme",
+    "URLscheme",
+    "URL scheme",
+    "Custom URL",
+    "Launch My App",
+    "Launch App",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-windows",
+    "cordova-windows8"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-customurlscheme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmgustavo/Custom-URL-scheme.git"
+  },
+  "version": "4.3.0"
+}

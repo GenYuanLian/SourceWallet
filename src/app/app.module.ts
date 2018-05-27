@@ -14,7 +14,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { Toast } from '@ionic-native/toast';
 import { TouchID } from '@ionic-native/touch-id';
-import { FCM } from '@ionic-native/fcm';
 import { AppUpdate } from '@ionic-native/app-update';
 
 /* Modules */
@@ -459,7 +458,6 @@ export function createTranslateLoader(http: HttpClient) {
     DerivationPathHelperProvider,
     ExternalLinkProvider,
     FeedbackProvider,
-    FCM,
     HomeIntegrationsProvider,
     FeeProvider,
     GlideraProvider,
