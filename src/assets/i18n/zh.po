@@ -99,7 +99,7 @@ msgid "Allow camera access"
 msgstr "允许访问相机"
 
 msgid "Almost done! Let's review."
-msgstr "差不多完成了 ！让我们回顾一下。"
+msgstr "让我们回顾一下"
 
 msgid "Alternative currency"
 msgstr ""

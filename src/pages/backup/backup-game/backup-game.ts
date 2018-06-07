@@ -122,8 +122,8 @@ export class BackupGamePage {
   private showBackupResult(): void {
     if (this.error) {
       let alert = this.alertCtrl.create({
-        title: "Uh oh...",
-        subTitle: "It's important that you write your backup phrase down correctly. If something happens to your wallet, you'll need this backup to recover your money. Please review your backup and try again.",
+        title: "出错了",
+        subTitle: "请确保按照正确顺序选择，再次尝试.",
         buttons: [{
           text: 'Ok',
           role: 'cancel',
@@ -135,10 +135,10 @@ export class BackupGamePage {
       alert.present();
     } else {
       let opts = {
-        title: 'Your bitcoin wallet is backed up!',
-        message: 'Be sure to store your recovery phrase in a secure place. If this app is deleted, your money cannot be recovered without it.',
+        title: '备份已完成',
+        message: '请牢记助记词，如果应用卸载，可以通过助记词来恢复您的钱包.',
         buttons: [{
-          text: 'Got it',
+          text: '确认',
           handler: () => {
             if (this.fromOnboarding) {
               this.navCtrl.push(DisclaimerPage);
