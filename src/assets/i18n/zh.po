@@ -1245,7 +1245,7 @@ msgid "Passwords do not match"
 msgstr "密码不匹配"
 
 msgid "Paste the backup plain text code"
-msgstr ""
+msgstr "粘贴备份文件内容"
 
 msgid "Pay 0% fees to turn bitcoin into dollars."
 msgstr "0%付费以BSTK变成美元。"

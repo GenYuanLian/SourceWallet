@@ -44,7 +44,7 @@ export class CustomAmountPage {
       this.address = this.walletProvider.getAddressView(this.wallet, addr);
 
       let parsedAmount = this.txFormatProvider.parseAmount(
-        this.wallet.coin,
+        /*this.wallet.coin*/'BSTK',
         this.navParams.data.amount,
         this.navParams.data.currency
       );
