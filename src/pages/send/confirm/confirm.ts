@@ -187,11 +187,11 @@ export class ConfirmPage {
 
           if (++index == this.wallets.length) {
             if (!walletsUpdated)
-              return reject('Could not update any wallet');
+              return reject(this.translate.instant('Could not update any wallet'));
 
             if (_.isEmpty(filteredWallets)) {
               this.setNoWallet(this.translate.instant('Insufficient funds'), true);
-              return reject('Insufficient funds');
+              return reject(this.translate.instant('Insufficient funds'));
             }
             this.wallets = _.clone(filteredWallets);
             return resolve();
@@ -200,11 +200,11 @@ export class ConfirmPage {
           this.logger.error(err);
           if (++index == this.wallets.length) {
             if (!walletsUpdated)
-              return reject('Could not update any wallet');
+              return reject(this.translate.instant('Could not update any wallet'));
 
             if (_.isEmpty(filteredWallets)) {
               this.setNoWallet(this.translate.instant('Insufficient funds'), true);
-              return reject('Insufficient funds for fee');
+              return reject(this.translate.instant('Insufficient funds for fee'));
             }
             this.wallets = _.clone(filteredWallets);
             return resolve();
