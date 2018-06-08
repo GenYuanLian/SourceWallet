@@ -3,7 +3,8 @@ import { NavController, LoadingController, Slides, Navbar } from 'ionic-angular'
 import { Logger } from '../../../providers/logger/logger';
 
 //pages
-import { CollectEmailPage } from '../collect-email/collect-email';
+//import { CollectEmailPage } from '../collect-email/collect-email';
+import { BackupRequestPage } from '../backup-request/backup-request';
 
 //providers
 import { ProfileProvider } from '../../../providers/profile/profile';
@@ -69,7 +70,8 @@ export class TourPage {
     this.onGoingProcessProvider.set('creatingWallet', true);
     this.profileProvider.createDefaultWallet().then((wallet) => {
       this.onGoingProcessProvider.set('creatingWallet', false);
-      this.navCtrl.push(CollectEmailPage, { walletId: wallet.id });
+      //this.navCtrl.push(CollectEmailPage, { walletId: wallet.id });
+      this.navCtrl.push(BackupRequestPage, { walletId: wallet.id });
     })
   }
 
