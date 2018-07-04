@@ -557,7 +557,7 @@ export class ConfirmPage {
             //let unit = this.config.wallet.settings.unitName;
             let unit = 'BSTK';
             let name = wallet.name;
-            let message = 'Sending ' + amount + ' ' + unit + ' from your ' + name + ' wallet'; // TODO: translate
+            let message = this.translate.instant('from your ') + name + this.translate.instant(' wallet') + this.translate.instant('Send') + ' ' + amount + ' ' + unit;
             let okText = this.translate.instant('Confirm');
             let cancelText = this.translate.instant('Cancel');
             this.popupProvider.ionicConfirm(null, message, okText, cancelText).then((ok: boolean) => {
@@ -593,6 +593,7 @@ export class ConfirmPage {
 
       confirmTx().then((nok: boolean) => {
         if (nok) {
+          this.onGoingProcessProvider.set('creatingTx', false);
           return;
         }
         publishAndSign();

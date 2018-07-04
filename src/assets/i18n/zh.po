@@ -2338,3 +2338,12 @@ msgstr "我已经写下助记词"
 
 msgid "Srcchain network fee policy"
 msgstr "交易费用策略"
+
+msgid "from your "
+msgstr "从您的 "
+
+msgid " wallet"
+msgstr " 钱包"
+
+msgid "send"
+msgstr "发送"
