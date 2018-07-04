@@ -159,6 +159,10 @@ export class SendPage {
   }
 
   public findContact(search: string): void {
+    if (search.startsWith("srcchain:")) {
+      search = search.replace("srcchain:", "bitcoin:");
+    }
+
     if (this.incomingDataProvider.redir(search)) return;
     if (search && search.trim() != '') {
       let result = _.filter(this.contactsList, (item: any) => {
