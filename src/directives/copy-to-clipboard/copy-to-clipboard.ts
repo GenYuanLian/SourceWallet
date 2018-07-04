@@ -4,6 +4,7 @@ import { ToastController } from 'ionic-angular';
 import { Clipboard } from '@ionic-native/clipboard';
 import { PlatformProvider } from '../../providers/platform/platform';
 import { Logger } from '../../providers/logger/logger';
+import { TranslateService } from '@ngx-translate/core';
 
 @Directive({
   selector: '[copy-to-clipboard]', // Attribute selector
@@ -18,13 +19,15 @@ export class CopyToClipboard {
   private dom: Document;
   private isCordova: boolean;
   private isNW: boolean;
+  private 
 
   constructor(
     @Inject(DOCUMENT) dom: Document,
     public toastCtrl: ToastController,
     public clipboard: Clipboard,
     public platform: PlatformProvider,
-    public logger: Logger
+    public logger: Logger,
+    private translate: TranslateService
   ) {
     this.logger.info('CopyToClipboardDirective initialized.');
     this.isCordova = this.platform.isCordova;
@@ -52,7 +55,7 @@ export class CopyToClipboard {
       this.copyBrowser();
     }
     let showSuccess = this.toastCtrl.create({
-      message: 'Copied to clipboard',
+      message: this.translate.instant('Copied to clipboard'),
       duration: 1000,
     });
     showSuccess.present();
