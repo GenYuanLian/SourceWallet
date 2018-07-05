@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>BSTK 行情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="priceList && priceList[0]">
+    <ion-item *ngFor="let item of priceList">
+      <div>
+        <span class="pairLabel">BSTK</span><span class="pairName"> / {{item.pairName}}</span>
+      </div>
+      <div>
+        <span class="market">{{item.marketName}}</span><span class="volume"> 量: {{item.volumeTS}}</span>
+      </div>
+      <div item-end>
+        <div class="endL">
+          <div class="priceCNY">¥{{item.priceCny}}</div>
+          <div class="pricePair">{{item.pricePair}}</div>
+        </div>
+      </div>
+      <div item-end>
+        <div class="{{item.changeStyle}}">{{item.change}}%</div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
