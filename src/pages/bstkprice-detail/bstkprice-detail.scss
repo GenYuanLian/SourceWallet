@@ -6,17 +6,17 @@ bstkprice-detail {
   .pairName {
     color: #81827c;
     font-weight: 400;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
   }
   .market {
     color: #81827c;
     font-weight: 400;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .volume {
     color: #81827c;
     font-weight: 400;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
   }
   .up {
     background-color: red;
@@ -24,8 +24,8 @@ bstkprice-detail {
     width: 60px;
     text-align: center;
     color: white;
-    font-weight: 800;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     border-radius: 3px;
   }
   .down {
@@ -34,20 +34,20 @@ bstkprice-detail {
     width: 60px;
     text-align: center;
     color: white;
-    font-weight: 800;
-    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
     border-radius: 3px;
   }
   .endL {
     width: 70px;
   }
   .priceCNY {
-    font-weight: 800;
+    font-weight: 400;
     font-size: 1.5rem;
   }
   .pricePair {
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
     color: #81827c;
   }
 }

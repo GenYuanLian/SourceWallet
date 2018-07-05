@@ -8,7 +8,7 @@
 
 <ion-content>
   <ion-list *ngIf="priceList && priceList[0]">
-    <ion-item *ngFor="let item of priceList">
+    <ion-item *ngFor="let item of priceList"  (click)="openExchangeWeb(item)">
       <div>
         <span class="pairLabel">BSTK</span><span class="pairName"> / {{item.pairName}}</span>
       </div>
