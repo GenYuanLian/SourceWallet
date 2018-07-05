@@ -28,18 +28,30 @@ export class BstkPriceProvider {
     }
 
     let formatListData = function (v) {
-      var result = {};
+      var result = {
+        pairName: null as string,
+        marketName: null as string,
+        priceCny: null as string,
+        pricePair: null as string,
+        volumeTS: null as string,
+        change: null as string,
+        changeStyle: null as string
+      };
+
       result.pairName = v.Com_id.split('_')[1];
       result.marketName = v.Market_name === "COIN2COIN" ? "C2C" : v.Market_name;
       result.priceCny = v.Price_display_cny.toFixed(4);
       result.pricePair = v.Price_display;
 
       var volume = Number(v.Volume_24h);
+      var strVolume = '';
       if (volume > 10000) {
-        volume = (volume / 10000).toFixed(2) + '万';
+        strVolume = String((volume / 10000).toFixed(2)) + '万';
+      } else {
+        strVolume = volume.toFixed(2);
       }
 
-      result.volumeTS = volume;
+      result.volumeTS = strVolume;
       result.change = Number(v.Percent_change_display).toFixed(2);
       result.changeStyle = Number(v.Percent_change_display) > 0 ? 'up' : 'down';
       return result;
