@@ -14,7 +14,7 @@ export class BstkPriceProvider {
     private http: HttpClient
   ) {
     this.logger.info('BstkPriceProvider initialized');
-    this.priceUrl = 'http://bstkprice.genyuanlian.com:6001/';
+    this.priceUrl = 'http://bstkprice.genyuanlian.com:6001/data';
     this.priceData = null;
     this.priceList = null;
     this.updateData();
@@ -58,36 +58,31 @@ export class BstkPriceProvider {
     }
 
     let requestData = function () {
-      self.http.get(self.priceUrl + '/data').subscribe((data: any) => {
+      self.http.get(self.priceUrl).subscribe((data: any) => {
         self.logger.info('Update price data success:', data);
-        self.priceData = data;
-        if (Number(data.Percent_change_display) > 0) {
-          data.changeStyle = "up";
+        self.priceData = data.summaryData;
+        if (Number(self.priceData.Percent_change_display) > 0) {
+          self.priceData.changeStyle = "up";
         } else {
-          data.changeStyle = "down";
+          self.priceData.changeStyle = "down";
         }
 
         // format data display
-        data.Volume_24h = formatValue(data.Volume_24h);
-        data.Price_usd = data.Price_usd.toFixed(6);
-        data.Price_btc = data.Price_btc.toFixed(8);
-        data.Percent_change_display = Number(data.Percent_change_display).toFixed(2);
+        self.priceData.Volume_24h = formatValue(self.priceData.Volume_24h);
+        self.priceData.Price_usd = self.priceData.Price_usd.toFixed(6);
+        self.priceData.Price_btc = self.priceData.Price_btc.toFixed(8);
+        self.priceData.Percent_change_display = Number(self.priceData.Percent_change_display).toFixed(2);
+
+        self.priceList = []
+        for (var idx in data.listData) {
+          // ignore first
+          if (Number(idx) > 0) {
+            self.priceList.push(formatListData(data.listData[idx]));
+          }
+        }
 
       }, (data: any) => {
         self.logger.error('Update price data: ERROR ' + data);
-      });
-
-      self.http.get(self.priceUrl + '/list').subscribe((data: any) => {
-        self.logger.info('Update price list success:', data);
-        self.priceList = []
-        for (var idx in data) {
-          // ignore first
-          if (Number(idx) > 0) {
-            self.priceList.push(formatListData(data[idx]));
-          }
-        }
-      }, (data: any) => {
-        self.logger.error('Update price list: ERROR ' + data);
       });
     };
 
