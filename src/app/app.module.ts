@@ -53,6 +53,7 @@ import { TxDetailsPage } from '../pages/tx-details/tx-details';
 import { TxpDetailsPage } from '../pages/txp-details/txp-details';
 import { SendFeedbackPage } from '../pages/feedback/send-feedback/send-feedback';
 import { SuccessModalPage } from '../pages/success/success';
+import { BstkPriceDetailPage } from '../pages/bstkprice-detail/bstkprice-detail';
 
 // Integrations: Amazon
 import { AmazonCardDetailsPage } from '../pages/integrations/amazon/amazon-card-details/amazon-card-details';
@@ -98,6 +99,7 @@ import { WalletItemPage } from '../pages/includes/wallet-item/wallet-item';
 import { WalletActivityPage } from '../pages/includes/wallet-activity/wallet-activity';
 import { WalletSelectorPage } from '../pages/includes/wallet-selector/wallet-selector';
 import { CardItemPage } from '../pages/includes/card-item/card-item';
+import { BstkPriceHeadPage } from '../pages/includes/bstkprice-head/bstkprice-head';
 
 /* Tabs */
 import { HomePage } from '../pages/home/home';
@@ -201,6 +203,7 @@ import { TxFormatProvider } from '../providers/tx-format/tx-format';
 import { FilterProvider } from '../providers/filter/filter';
 import { WalletProvider } from '../providers/wallet/wallet';
 import { EmailNotificationsProvider } from '../providers/email-notifications/email-notifications';
+import { BstkPriceProvider } from '../providers/bstk-price/bstk-price';
 
 /* Directives */
 import { CopyToClipboard } from '../directives/copy-to-clipboard/copy-to-clipboard';
@@ -310,6 +313,8 @@ export function createTranslateLoader(http: HttpClient) {
     WalletActivityPage,
     WalletSelectorPage,
     CardItemPage,
+    BstkPriceHeadPage,
+    BstkPriceDetailPage,
     /* Directives */
     CopyToClipboard,
     LongPress,
@@ -437,7 +442,8 @@ export function createTranslateLoader(http: HttpClient) {
     WalletItemPage,
     WalletActivityPage,
     WalletSelectorPage,
-    CardItemPage
+    CardItemPage,
+    BstkPriceDetailPage
   ],
   providers: [
     AddressProvider,
@@ -492,6 +498,7 @@ export function createTranslateLoader(http: HttpClient) {
     EmailNotificationsProvider,
     DecimalPipe,
     PersistenceProvider,
+    BstkPriceProvider,
     File,
     {
       provide: ErrorHandler,

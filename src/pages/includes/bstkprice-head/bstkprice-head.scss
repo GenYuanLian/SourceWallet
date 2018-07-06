@@ -1,0 +1,46 @@
+bstkprice-head {
+  .bg_gray {
+    background-color: white;
+    color: #a1a299;
+    padding-left: 5px;
+  }
+  .cnyPrice {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .up {
+    color: red;
+    font-weight: 400;
+  }
+  .down {
+    color: green;
+    font-weight: 400;
+  }
+  .price_ev {
+    font-size: 1rem;
+    font-weight: 800;
+  }
+  .volume {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+  .volume_label {
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+  }
+  .bstk_logo {
+    width:30px;
+  }
+  .logo_div {
+    border-right: 10px;
+    border-color: gray;
+  }
+  .v_sep {
+    float:left;
+    width: 1px;
+    height: 40px;
+    background: #ddded5;
+    margin-right: 10px;
+  }
+}

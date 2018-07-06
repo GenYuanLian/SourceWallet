@@ -1,0 +1,20 @@
+<ion-item class="bg_gray" *ngIf="priceData" (click)="openBstkDetail()">
+  <div item-start class="logo_div">
+    <img src="assets/img/bstk/logo.png" class="bstk_logo" />
+  </div>
+  <div class="v_sep"></div>
+  <div>
+    <span class="cnyPrice">{{priceData.Price_display}}</span>
+    <span class="{{priceData.changeStyle}}">{{priceData.Percent_change_display}}%</span>
+  </div>
+  <div>
+    <span class="price_ev">≈${{priceData.Price_usd}}  ≈{{priceData.Price_btc}}BTC</span>
+  </div>
+  <div item-end>
+    <div class="volume">¥{{priceData.Volume_24h}}</div>
+    <div class="volume_label">24H成交额</div>
+  </div>
+  <div item-end>
+    >>
+  </div>
+</ion-item>
