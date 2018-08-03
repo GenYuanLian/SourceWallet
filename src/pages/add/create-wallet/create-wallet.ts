@@ -120,11 +120,11 @@ export class CreateWalletPage implements OnInit {
   private updateSeedSourceSelect(): void {
     this.seedOptions = [{
       id: 'new',
-      label: 'Random',
+      label: this.translate.instant('Random'),
       supportsTestnet: true
     }, {
       id: 'set',
-      label: 'Specify Recovery Phrase',
+      label: this.translate.instant('Specify Recovery Phrase'),
       supportsTestnet: false
     }];
     this.createForm.controls['selectedSeed'].setValue(this.seedOptions[0].id); // new or set
@@ -137,7 +137,7 @@ export class CreateWalletPage implements OnInit {
       this.createForm.get('recoveryPhrase').setValidators(null);
     }
     this.createForm.controls['selectedSeed'].setValue(seed); // new or set
-    this.createForm.controls['testnet'].setValue(false);
+    //this.createForm.controls['testnet'].setValue(false);
     this.createForm.controls['derivationPath'].setValue(this.derivationPathByDefault);
     this.createForm.controls['recoveryPhrase'].setValue(null);
   }

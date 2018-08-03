@@ -13,20 +13,20 @@
 
     <div *ngIf="isShared">
       <ion-item>
-        <ion-label stacked>Your name</ion-label>
+        <ion-label stacked translate>Your name</ion-label>
         <ion-input type="text" formControlName="myName"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Total number of copayers</ion-label>
-        <ion-select formControlName="totalCopayers" (ionChange)="setTotalCopayers(createForm.value.totalCopayers)">
+        <ion-label stacked translate>Total number of copayers</ion-label>
+        <ion-select formControlName="totalCopayers" (ionChange)="setTotalCopayers(createForm.value.totalCopayers)" okText='{{"OK" | translate}}' cancelText='{{"Cancel" | translate}}'>
           <ion-option *ngFor="let copayer of copayers" [value]="copayer">{{copayer}}</ion-option>
         </ion-select>
       </ion-item>
 
       <ion-item>
-        <ion-label stacked>Required number of signatures</ion-label>
-        <ion-select formControlName="requiredCopayers">
+        <ion-label stacked translate>Required number of signatures</ion-label>
+        <ion-select formControlName="requiredCopayers" okText='{{"OK" | translate}}' cancelText='{{"Cancel" | translate}}'>
           <ion-option *ngFor="let signature of signatures" [value]="signature">{{signature}}</ion-option>
         </ion-select>
       </ion-item>
@@ -34,7 +34,7 @@
 
     <ion-item>
       <ion-label stacked>{{'Coin' | translate}}</ion-label>
-      <ion-select formControlName="coin" (ionChange)="createForm.value.testnetEnabled = false">
+      <ion-select formControlName="coin" (ionChange)="createForm.value.testnetEnabled = false" okText='{{"OK" | translate}}' cancelText='{{"Cancel" | translate}}'>
         <!--<ion-option value="btc">BTC</ion-option>-->
         <ion-option value="btc">BSTK</ion-option>
         <!--<ion-option value="bch">BCH</ion-option>-->
@@ -57,7 +57,7 @@
     -->
       <ion-item>
         <ion-label stacked translate>Wallet key</ion-label>
-        <ion-select formControlName="selectedSeed" (ionChange)="seedOptionsChange(createForm.value.selectedSeed)">
+        <ion-select formControlName="selectedSeed" (ionChange)="seedOptionsChange(createForm.value.selectedSeed)" okText='{{"OK" | translate}}' cancelText='{{"Cancel" | translate}}'>
           <ion-option *ngFor="let opt of seedOptions" [value]="opt.id">{{opt.label}}</ion-option>
         </ion-select>
       </ion-item>
@@ -75,7 +75,7 @@
 -->
 
       <ion-item *ngIf="createForm.value.selectedSeed == 'set'">
-        <ion-label stacked>Derivation path</ion-label>
+        <ion-label stacked translate>Derivation path</ion-label>
         <ion-input type="text" formControlName="derivationPath"></ion-input>
       </ion-item>
 

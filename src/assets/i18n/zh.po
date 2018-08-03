@@ -474,7 +474,7 @@ msgid "Create bitcoin wallet"
 msgstr "创建BSTK钱包"
 
 msgid "Create shared wallet"
-msgstr "创建共享的钱包"
+msgstr "创建共享钱包"
 
 msgid "Create wallet"
 msgstr "创建钱包"
@@ -540,7 +540,7 @@ msgid "Derivation Strategy"
 msgstr "衍生策略"
 
 msgid "Derivation path"
-msgstr ""
+msgstr "衍生路径"
 
 msgid "Details"
 msgstr "详情"
@@ -945,7 +945,7 @@ msgid "Join shared wallet"
 msgstr "加入共享钱包"
 
 msgid "Join wallet"
-msgstr ""
+msgstr "加入共享钱包"
 
 msgid "Joining Wallet..."
 msgstr "正在加入钱包..."
@@ -1389,7 +1389,7 @@ msgid "Quick review!"
 msgstr "快速审查 ！"
 
 msgid "Random"
-msgstr ""
+msgstr "随机"
 
 msgid "Rate"
 msgstr ""
@@ -1479,7 +1479,7 @@ msgid "Request Specific amount"
 msgstr "请求特定量"
 
 msgid "Required number of signatures"
-msgstr ""
+msgstr "所需最少签名数量"
 
 msgid "Restore from backup"
 msgstr "导入钱包"
@@ -1671,7 +1671,7 @@ msgid "Some of your wallets are not eligible for Bitcoin Cash support. You can t
 msgstr ""
 
 msgid "Specify Recovery Phrase"
-msgstr ""
+msgstr "指定助记词"
 
 msgid "Spend proposal is not accepted"
 msgstr "花费提议不被接受"
@@ -1845,7 +1845,7 @@ msgid "Total Locked Balance"
 msgstr "锁定结余的总额"
 
 msgid "Total number of copayers"
-msgstr ""
+msgstr "共享钱包参与人数"
 
 msgid "Total wallet inputs"
 msgstr "钱包总共进账"
@@ -2028,7 +2028,7 @@ msgid "Wallet incomplete and broken"
 msgstr "钱包不完整和损坏"
 
 msgid "Wallet invitation"
-msgstr ""
+msgstr "钱包邀请地址"
 
 msgid "Wallet is full"
 msgstr "钱包已满"
@@ -2061,7 +2061,7 @@ msgid "Wallet not registered at the wallet service. Recreate it from \"Create Wa
 msgstr "钱包不在 Wallet Service 注册。使用“创建钱包\"的\"高级选项\"设置你的恢复短语以重新创建它"
 
 msgid "Wallet recovery phrase"
-msgstr ""
+msgstr "钱包助记词"
 
 msgid "Wallet recovery phrase not available"
 msgstr "錢包恢復短語不存在"

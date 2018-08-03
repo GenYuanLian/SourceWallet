@@ -17,7 +17,7 @@
     <ion-item-divider></ion-item-divider>
     <ion-item class="fee-level">
       <ion-label>Fee level</ion-label>
-      <ion-select [(ngModel)]="selectedFee" (ionChange)="changeSelectedFee(selectedFee)">
+      <ion-select [(ngModel)]="selectedFee" (ionChange)="changeSelectedFee(selectedFee)" okText='{{"OK" | translate}}' cancelText='{{"Cancel" | translate}}'>
         <ion-option *ngFor="let fee of feeOpts" [value]="fee">{{ feeProvider.feeOpts[fee] }}</ion-option>
       </ion-select>
     </ion-item>

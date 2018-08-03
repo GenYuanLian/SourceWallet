@@ -54,8 +54,8 @@
         <div *ngIf="selectComplete">
           <ion-item-divider>{{'Is this correct?' | translate}}</ion-item-divider>
           <div>
-            <button ion-button block (click)="slideNext();" translate>Confirm</button>
-            <button ion-button block outline (click)="setFlow();" translate>Clear</button>
+            <button ion-button block (click)="slideNext();" translate><span translate>Confirm</span></button>
+            <button ion-button block outline (click)="setFlow();" translate><span translate>Clear</span></button>
           </div>
         </div>
       </div>

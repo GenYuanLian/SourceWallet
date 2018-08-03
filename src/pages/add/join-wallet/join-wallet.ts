@@ -62,11 +62,11 @@ export class JoinWalletPage {
 
     this.seedOptions = [{
       id: 'new',
-      label: 'Random',
+      label: this.translate.instant('Random'),
       supportsTestnet: true
     }, {
       id: 'set',
-      label: 'Specify Recovery Phrase',
+      label: this.translate.instant('Specify Recovery Phrase'),
       supportsTestnet: false
     }];
   }
@@ -94,7 +94,7 @@ export class JoinWalletPage {
       this.joinForm.get('recoveryPhrase').setValidators(null);
     }
     this.joinForm.controls['selectedSeed'].setValue(seed);
-    this.joinForm.controls['testnet'].setValue(false);
+    //this.joinForm.controls['testnet'].setValue(false);
     this.joinForm.controls['derivationPath'].setValue(this.derivationPathByDefault);
   }
 
