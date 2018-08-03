@@ -1629,7 +1629,7 @@ msgid "Share the love by inviting your friends."
 msgstr "邀请您的朋友分享爱。"
 
 msgid "Share this invitation with your copayers"
-msgstr "将此邀请与你的 copayers 共享"
+msgstr "分享此地址给其它待加入用户"
 
 msgid "Show advanced options"
 msgstr "显示高级选项"
@@ -1989,7 +1989,7 @@ msgid "WARNING: UNTRUSTED CERTIFICATE"
 msgstr "警告︰不受信任的证书"
 
 msgid "Waiting for copayers"
-msgstr "正在等待 copayers"
+msgstr "正在等待其它用户加入"
 
 msgid "Waiting..."
 msgstr "等待中..."
