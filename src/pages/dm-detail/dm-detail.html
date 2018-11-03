@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>数据挖矿</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-list *ngIf="dmList && dmList[0]">
+    <ion-item *ngFor="let item of dmList">
+      <div item-start class="logo_div">
+        <img src="{{item.logo}}" class="bstk_logo" />
+      </div>
+      <div>
+        <span class="pairLabel">{{item.label}}</span>
+      </div>
+      <div>
+        <span class="market">算力：{{item.powerValue}}</span>
+      </div>
+      <div item-end>
+        <div class="endL">
+          <div class="priceCNY">收益：{{item.income}}</div>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
